@@ -1,0 +1,164 @@
+/* Main <div> at top */
+.cards {
+  /* 16px is 1rem, so 64px on each side */
+  padding: 4rem;
+  background: #fff;
+}
+
+/* Text: Check out these EPIC Destinations! */
+h1 {
+  text-align: center;
+  margin-top: -30px;
+  color: gray;
+  font-weight: 300;
+}
+
+/* PARENT: surrounds all cards & wrapper */
+.cards__container {
+  display: flex;
+  /* info will be up & down */
+  flex-flow: column;
+  /* everything will be aligned to center */
+  align-items: center;
+  /* center inside external space */
+  margin: 0 auto;
+  /* so they don't end up too wide */
+  max-width: 1120px;
+  width: 90%;
+}
+
+/* PARENT: surrounds all cards */
+.cards__wrapper {
+  /* so we can use absolute on nested items */
+  position: relative;
+  /* top, horizontal, bottom */
+  margin: 50px 0 45px;
+}
+
+/* PARENT: <ul> that holds different cards */
+.cards__items {
+  margin-bottom: 24px;
+}
+
+/**** CardItem.js *************************************/
+/* The following tags/classes are from CardItem.js
+   These are individual Cards */
+
+/* PARENT: <li> that holds entire Card */
+.cards__item {
+  display: flex;
+  /* takes up 1 width of remaining space (100%) */
+  flex: 1;
+  /* top & bottom, left & right */
+  margin: 0 1rem;
+  border-radius: 10px;
+}
+
+/* PARENT: <Link> tag that surrounds img & text */
+.cards__item__link {
+  display: flex;
+  /* content goes up & down */
+  flex-flow: column;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  text-decoration: none;
+  /* shading below card */
+  box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
+  -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+  filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+}
+
+/* PARENT: <figure> wraps image */
+/* 'Adventure' label in card #1 */
+.cards__item__pic-wrap {
+  /* so we can use absolute */
+  position: relative;
+  /* adjustable width depending on pic? */
+  width: 100%;
+  /* pushes image down quite a bit */
+  padding-top: 67%;
+  overflow: hidden;
+}
+
+/* pseudo-class to make the background */
+.cards__item__pic-wrap::after {
+  /* in CardItems.js, data-category is a property w/ the value of props.label */
+  /* in Cards.js, where <CardItem /> Component is used, it's set to 'Adventure' */
+  content: attr(data-category);
+  position: absolute;
+  /* ensures everything fits within box and doesn't flow outside of it */
+  box-sizing: border-box;
+  /* pulls color to bottom */
+  bottom: 0;
+  /* pushes from left sie */
+  margin-left: 10px;
+  /* internal sizing */
+  padding: 6px 8px;
+  max-width: calc((100%) - 60px);
+  font-size: 12px;
+  /* bolds text */
+  font-weight: 700;
+  color: #fff;
+  background-color: rgba(221, 43, 39, 0.7);
+}
+
+/* animation */
+.fade-img {
+  animation-name: fade-img;
+  animation-duration: 2s;
+}
+
+/* CHILD: <img> tag */
+.cards__item__img {
+  display: block;
+  position: absolute;
+  /* pulls image across entire space? */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  transition: all 0.2s linear;
+  border-radius: 15px;
+}
+
+/* enlarges image when you hover over it */
+.cards__item__img:hover {
+  transform: scale(1.1);
+}
+
+/* PARENT: <div> holding <h5> text */
+.cards__item__info {
+  /* internal spacing around text */
+  padding: 20px 30px 30px;
+  text-align: center;
+}
+
+/* CHILD: */
+.cards__item__text {
+  color: #252e48;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+/* Cards.js - <ul> that surrounds each Card row */
+/* min-width = if the device is greater (or equal to) than 1024, then do this: */
+@media only screen and (min-width: 1024px) {
+  .cards__items {
+    display: flex;
+  }
+}
+
+/* CardItem.js file - <li> that surrounds entire component */
+/* max-width = if the device is less than (or equal to) 1000px, then do this: */
+@media only screen and (max-width: 1000px) {
+  .cards__item {
+    margin-bottom: 2rem;
+  }
+}

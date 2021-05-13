@@ -1,0 +1,403 @@
+/* BUGS - Hover Effect not working: line 85 */
+
+/* PARENT1: <nav> that holds entire navbar menu */
+.navbar {
+  /* display: flex - this will float everything on the same line, including navbar-top*/
+  background: url('./images/img-11.jpg') center center/cover no-repeat;
+  height: 120px;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  z-index: 999;
+}
+
+.navbar-top {
+  display: flex;
+  width: 95%;
+  justify-content: space-between;
+}
+
+.navbar-top-left {
+  display: flex;
+}
+
+/* PARENT2 - holds menu */
+.navbar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  margin-left: 40px;
+  max-width: 92.5%;
+}
+
+/************ Top **************************************************************/
+/****** Left ************************/
+.navbar-top-colorblock {
+  background: rgba(221, 43, 39, 0.5);
+  height: 40px;
+  color: #fff;
+  margin-left: 135px;
+}
+
+.navbar-top-colorblock h5 {
+  font-weight: 100;
+  font-size: 1.05rem;
+  letter-spacing: 0.5px;
+  margin-top: 5px;
+  padding: 0 5px;
+  justify-self: start;
+}
+
+.navbar-top-phone .fas {
+  margin-right: 5px;
+}
+
+.navbar-top-phone {
+  margin-left: 35px;
+  color: #fff;
+  margin-top: 9px;
+}
+
+.navbar-top-phone h5 {
+  font-weight: 300;
+  font-size: 1.05rem;
+}
+
+.phone {
+  text-decoration: none;
+  color: #fff;
+}
+
+.navbar-top-location .fas {
+  margin-right: 5px;
+}
+
+.navbar-top-location {
+  margin-left: 35px;
+  color: #fff;
+  margin-top: 9px;
+}
+
+.navbar-top-location h5 {
+  font-weight: 300;
+  font-size: 1.05rem;
+}
+
+.navbar-top-phone .fas:hover,
+.navbar-top-left .fas:hover {
+  color: #dd2b27;
+}
+
+/****** Right ************************/
+.navbar-top-right {
+  color: #fff;
+  display: grid;
+  font-weight: 300;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 22px;
+  margin-top: 5px;
+  /* floats links to the end */
+  list-style: none;
+}
+
+.nav-insta-icon {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.nav-facebook-icon {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.nav-twitter-icon {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.nav-yelp-icon {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.nav-insta-icon:hover,
+.nav-facebook-icon:hover,
+.nav-twitter-icon:hover,
+.nav-yelp-icon:hover {
+  color: #dd2b27;
+}
+/************ Bottom ***********************************************************/
+.logo-img {
+  margin-top: 10px;
+}
+.logo-text {
+  margin-top: 15px;
+  margin-left: 10px;
+}
+
+.logo-text:hover {
+  color: #dd2b27;
+}
+
+img {
+  margin-top: 7px;
+  border-radius: 50px;
+}
+
+/* PARENT3 - applied to logo LINK <a> */
+.navbar-logo {
+  display: flex;
+  /* floats logo to left */
+  justify-self: start;
+  font-size: 3rem;
+  width: 100%;
+  font-weight: 100;
+  margin-left: 25px;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* span {
+  color: #dd2b27;
+  font-size: 3.1rem;
+  margin-left: 5px;
+} */
+
+/* CHILD: logo icon
+.fa-typo3 {
+  margin-left: 0.5rem;
+  font-size: 1.8rem;
+} */
+
+/* PARENT3 - <div> that holds Hamburger Menu */
+.menu-icon {
+  display: none;
+}
+
+/* CHILD - <i> Hamburger Menu */
+.fa-bars {
+  color: #fff;
+}
+
+/* PARENT3 - <ul> that holds <li>'s & LINKs */
+.nav-menu {
+  /* all child elements are on a grid */
+  display: grid;
+  font-weight: 300;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 10px;
+  width: 80vw;
+  margin-top: 18px;
+  /* floats links to the end */
+  justify-content: end;
+  margin-right: 0rem;
+  list-style: none;
+  text-align: center;
+  /* 60% of the viewport width */
+}
+
+/* PARENT4 - <li> that holds LINKs */
+.nav-item {
+  height: 100px;
+}
+
+/* CHILD - LINK <a> */
+.nav-links {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0.5rem 0.3rem;
+  margin: 0.1rem 0.2rem;
+  font-size: 27px;
+  font-weight: 300;
+  height: 100%;
+  color: #fff;
+}
+
+/* hover effect - border bottom & lifting effect when hovering */
+.nav-links:hover {
+  color: #dd2b27;
+  transition: all 0.2s ease-out;
+}
+
+/* CHILD: LINK - SIGN UP LINK */
+/* hide in desktop view */
+.nav-links-mobile {
+  display: none;
+}
+
+.nav-btn {
+  margin-left: 10px;
+  margin-top: 13px;
+}
+
+@media screen and (max-width: 1065px) {
+  .navbar {
+    display: flex;
+    height: 80px;
+  }
+  .navbar-top {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .navbar-logo {
+    font-size: 2.8rem;
+  }
+}
+
+/* NOTE: Button doesn't show up on Mobile */
+@media screen and (max-width: 860px) {
+  /* ?? */
+  .NavbarItems {
+    position: relative;
+  }
+
+  img {
+    display: none;
+  }
+
+  .navbar-logo {
+    display: flex;
+    /* floats logo to left */
+    justify-self: start;
+
+    margin-left: 0px;
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  /* PARENT3: LINK <a> that holds logo <i>
+  .navbar-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(25%, 50%);
+  } */
+
+  /* PARENT3: <div> that holds Hamburger Menu <i> */
+  .menu-icon {
+    /* from none to block */
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* down 100% & over 60% */
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+  /* CHILD: <i> that holds X */
+  .fa-times {
+    color: #fff;
+    font-size: 2rem;
+  }
+
+  /* PARENT3 - <ul> changes from grid to flex */
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    /* 90% of viewport height */
+    height: 84vh;
+    /* height of header */
+    top: 65px;
+    /* hides automatically 'til it slides out */
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  /* PARENT3: <ul>.active = mobile version */
+  .nav-menu.active {
+    background: #4e737f;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+
+  /* CHILD: LINK <a> */
+  .nav-links {
+    /* links won't center w/out it */
+    display: table;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .nav-links:hover {
+    background-color: #fff;
+    color: #dd2b27;
+    border-radius: 0;
+  }
+
+  /* .mobile-link {
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  } */
+
+  /* CHILD: SIGN UP button <a> */
+  .nav-links-mobile {
+    /* shows up in mobile */
+    display: block;
+    text-align: center;
+    /* inside spacing */
+    padding: 14px 20px;
+    margin: 10px auto;
+
+    width: 60%;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    background-color: transparent;
+    color: #fff;
+    transition: all 0.3s ease-out;
+  }
+
+  /* when you hover over SIGN UP button the background changes to white */
+  .nav-links-mobile:hover {
+    background: #dd2b27;
+    color: #fff;
+    border: 1px solid #dd2b27;
+    transition: 250ms;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .nav-links-mobile {
+    width: 100px;
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .navbar-logo {
+    font-size: 1.6rem;
+  }
+
+  .navbar-container {
+    margin-right: 130px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navbar-logo {
+    font-size: 2rem;
+  }
+  .navbar-container {
+    margin-left: 0px;
+  }
+}
