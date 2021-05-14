@@ -8,56 +8,109 @@ import Eviction from './images/img-2.jpg';
 import Landlords from './images/img-1.jpg';
 import SueLandlord from './images/img-10.jpg';
 import Deposit from './images/img-5.jpg';
-import Call from './images/img-9.jpg';
+import Call from './images/img-12.png';
 
 function Cards() {
   return (
-    <div className='cards' id='about'>
-      {/* ^^ without this className image appears instead of white background */}
-      <h1>LEGAL SERVICES</h1>
+    <div className='cards' id='services'>
+      {/* ^^ 'services' is id to jump to'*/}
+
+      {/* Heading Text **************************/}
+      <div className='header-text'>
+        <h1>
+          OUR <span> PRACTICE AREAS </span>
+        </h1>
+      </div>
+      {/* End of Header **************************/}
+
+      {/* Cards  *********************************/}
       <div className='cards__container'>
         <div className='cards__wrapper'>
-          {/* Top Row of Cards */}
+          {/* Top Row of Cards *************/}
           <ul className='cards__items'>
             {/* src, text, label, & path are properties that are custom
             -- They are being plugged into CardItem Component Occurrence */}
+
             <CardItem
-              path='/services'
-              label='Eviction'
+              path='/sign-up'
+              label='EVICTION'
               src={Eviction}
-              // src='./img-2.jpg'
               text='Eviction Defense Consultation'
             />
-            {/* if you don't keep the images in these cards in public, it doesn't work :(
-            Other image is url in CSS */}
+
             <CardItem
-              path='/services'
-              label='Landlords'
+              path='/sign-up'
+              label='LANDLORDS'
               src={Landlords}
+              // src='./img-2.jpg'
               text='Property Management Help'
             />
           </ul>
-          {/* Bottom Row of Cards */}
+
+          {/* Bottom Row of Cards ***********/}
           <ul className='cards__items'>
             <CardItem
               src={SueLandlord}
               text='Break Your Lease'
-              label='Termination'
-              path='/services'
+              label='TERMINATION'
+              path='/sign-up'
             />
             <CardItem
               src={Deposit}
               text='Security Deposit Issues'
-              label='Refunds'
+              label='REFUNDS'
               path='/sign-up'
             />
             <CardItem
               src={Call}
-              text='Schedule a Call with Attorney Drennen'
-              label='Contact'
+              text='Class Action Suits and Defense'
+              label='JUSTICE'
               path='/sign-up'
             />
           </ul>
+        </div>
+      </div>
+      {/* End of Cards  **************************/}
+
+      {/* List of Services ***********************/}
+
+      {/* <div className='cards__container'>
+        <div className='cards__wrapper'>
+
+          <ul className='cards__items'></ul> */}
+
+      <div className='services-text-container'>
+        <div className='services-text'>
+          <p>
+            <span>We offer free inital consultations.</span> &nbsp; Our services
+            also include:
+          </p>
+          <br />
+        </div>
+
+        {/* list of services */}
+        <div className='lists'>
+          <div className='list-wrapper'>
+            <ul className='left-list'>
+              <li>Chicago Landlord and Tenant Services</li>
+
+              <li>Family Law</li>
+              <li>Civil Litigation</li>
+              <li>Class Action Suits and Defense</li>
+              <li>Consumer Advocacy and Protection</li>
+              <li>Criminal Defense</li>
+            </ul>
+
+            <ul className='right-list'>
+              <li>Contracts</li>
+
+              <li>Recovering Security Deposits from Landlord</li>
+              <li>Divorce</li>
+              <li>DUI/DWI</li>
+              <li>Consumer Advocacy and Protection</li>
+              <li>Real Estate Title Closings</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

@@ -1,8 +1,9 @@
 // Desktop/2) React/YouTube/Brian
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+
 // documents
-import { Button } from './Button';
+import { SignInButton } from './SignInButton';
 import './Navbar.css';
 import logo from './images/logo1.jpeg';
 
@@ -45,54 +46,64 @@ function Navbar() {
             <div className='navbar-top-phone'>
               <h5>
                 {/* if you want icon to float NEXT TO number, put icon inside h5 tag*/}
-                <Link to='tel:312-877-5233' className='phone' target='_blank'>
+                <a
+                  href='tel:312-877-5233'
+                  className='phone'
+                  target='_blank'
+                  rel='noreferrer'
+                >
                   <i className='fas fa-phone' />
                   312.877.5233
-                </Link>
+                </a>
               </h5>
             </div>
             <div className='navbar-top-location'>
               <h5>
-                <Link
-                  to='https://goo.gl/maps/HdWpKT2rb7uB2mhK6'
+                <a
+                  href='https://goo.gl/maps/HdWpKT2rb7uB2mhK6'
                   className='phone'
                   target='_blank'
+                  rel='noreferrer'
                 >
                   <i class='fas fa-location-arrow'></i>
                   77 W. Washington St. Suite 1009
-                </Link>
+                </a>
               </h5>
             </div>
           </div>
           <div className='navbar-top-right'>
-            <Link
-              to='www.instagram.com/tenantsrightschicago/'
+            <a
+              href='https://www.instagram.com/tenantsrightschicago/'
               className='nav-insta-icon'
               target='_blank'
+              rel='noreferrer'
             >
               <i class='fab fa-instagram'></i>
-            </Link>
-            <Link
-              to='https://www.facebook.com/chicagotenantsrightslaw'
+            </a>
+            <a
+              href='https://www.facebook.com/chicagotenantsrightslaw'
               className='nav-facebook-icon'
               target='_blank'
+              rel='noreferrer'
             >
               <i class='fab fa-facebook-f'></i>
-            </Link>
-            <Link
-              to='https://twitter.com/ChiTenantRights'
+            </a>
+            <a
+              href='https://twitter.com/ChiTenantRights'
               className='nav-yelp-icon'
               target='_blank'
+              rel='noreferrer'
             >
               <i class='fab fa-twitter'></i>
-            </Link>
-            <Link
-              to='https://www.yelp.com/biz/chicago-tenants-rights-law-chicago'
+            </a>
+            <a
+              href='https://www.yelp.com/biz/chicago-tenants-rights-law-chicago'
               className='nav-yelp-icon'
               target='_blank'
+              rel='noreferrer'
             >
               <i class='fab fa-yelp'></i>
-            </Link>
+            </a>
           </div>
         </div>
 
@@ -122,16 +133,21 @@ function Navbar() {
               </Link>
             </li>
             <li className='nav-item'>
+              {/* section1 = jump */}
               <Link
-                to='#section1'
+                to='#services'
                 className='nav-links'
-                onClick={() => window.location.replace('/#about')}
+                onClick={() => window.location.replace('/#services')}
               >
                 Services
               </Link>
             </li>
             <li className='nav-item'>
-              <Link to='/about' className='nav-links' onClick={closeMobileMenu}>
+              <Link
+                to='#about'
+                className='nav-links'
+                onClick={() => window.location.replace('/#about')}
+              >
                 About
               </Link>
             </li>
@@ -151,9 +167,9 @@ function Navbar() {
 
           <div className='nav-btn'>
             {button && (
-              <Button buttonStyle='btn--outline' buttonSize='btn--medium'>
+              <SignInButton buttonStyle='btn--outline' buttonSize='btn--medium'>
                 CONTACT
-              </Button>
+              </SignInButton>
             )}
           </div>
         </div>

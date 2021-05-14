@@ -9,8 +9,25 @@
 h1 {
   text-align: center;
   margin-top: -30px;
-  color: gray;
+  color: #303030;
   font-weight: 300;
+  letter-spacing: 3.5px;
+}
+
+h1 span {
+  font-weight: 700;
+  font-size: 2.1rem;
+  color: #76a1ae;
+}
+
+p {
+  font-weight: 300;
+  text-align: center;
+  font-size: 25px;
+}
+
+p span {
+  font-weight: 400;
 }
 
 /* PARENT: surrounds all cards & wrapper */
@@ -32,7 +49,7 @@ h1 {
   /* so we can use absolute on nested items */
   position: relative;
   /* top, horizontal, bottom */
-  margin: 50px 0 45px;
+  margin: 30px 0 40px;
 }
 
 /* PARENT: <ul> that holds different cards */
@@ -147,6 +164,50 @@ h1 {
   font-weight: 400;
 }
 
+/* List of Services ********************************/
+
+/* Services Text *******************************/
+/* Services Text *******************************/
+.services-text-container {
+  display: flex;
+  /* info will be up & down */
+  flex-flow: column;
+  /* everything will be aligned to center */
+  align-items: center;
+  /* center inside external space */
+  margin: 0 auto;
+  /* so they don't end up too wide */
+  max-width: 1120px;
+  width: 90%;
+  color: #303030;
+}
+
+/* change to lists__wrapper*/
+.list-wrapper {
+  /* so we can use absolute on nested items */
+  position: relative;
+  /* top, horizontal, bottom */
+  margin: 10px 0 40px;
+  display: flex;
+}
+
+.lists {
+  margin-bottom: 24px;
+  display: flex;
+}
+
+.right-list {
+  margin-left: 50px;
+  margin-right: -50px;
+}
+
+/* spacing between items */
+li {
+}
+
+@media only screen and (max-width: 1500px) {
+}
+
 /* Cards.js - <ul> that surrounds each Card row */
 /* min-width = if the device is greater (or equal to) than 1024, then do this: */
 @media only screen and (min-width: 1024px) {
@@ -157,8 +218,18 @@ h1 {
 
 /* CardItem.js file - <li> that surrounds entire component */
 /* max-width = if the device is less than (or equal to) 1000px, then do this: */
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1024px) {
   .cards__item {
     margin-bottom: 2rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .list-wrapper {
+    display: block;
+  }
+
+  .right-list {
+    margin-left: 0px;
   }
 }

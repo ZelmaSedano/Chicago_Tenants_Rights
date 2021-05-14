@@ -1,7 +1,8 @@
 // technologies
 import React from 'react';
 // documents
-import { Button } from './Button';
+import { SignInButton } from './SignInButton';
+import { ContactButton } from './ContactButton';
 import '../App.css';
 import './Hero.css';
 
@@ -14,32 +15,33 @@ function Hero() {
       {/* Buttons */}
       <div className='hero-btns'>
         {/* Button #1 */}
-        <Button
-          className='btns'
+        <ContactButton
+          className='btn'
           buttonStyle='btn--outline'
           buttonSize='btn--large'
         >
-          CALL HOTLINE
+          Call Hotline
           <i className='fas fa-phone' />
-        </Button>
+        </ContactButton>
+
         {/* Button #2 */}
-        <Button
-          className='btns'
+        <SignInButton
+          className='btn'
           buttonStyle='btn--red'
           buttonSize='btn--large'
           onClick={console.log('hey')}
         >
           BOOK APPOINTMENT
-        </Button>
+        </SignInButton>
       </div>
 
-      <div className='contact'>
+      {/* <div className='contact'>
         <h2>Save 25-35% when you BOOK ONLINE & Complete the Intake Form!</h2>
-      </div>
-
-      {/* <div className='arrow'>
-        <i class='fas fa-chevron-down'></i>
       </div> */}
+
+      <div className='arrow'>
+        <i class='fas fa-chevron-down'></i>
+      </div>
     </div>
   );
 }
