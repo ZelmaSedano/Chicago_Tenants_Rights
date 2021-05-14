@@ -14,15 +14,17 @@ function Hero() {
 
       {/* Buttons */}
       <div className='hero-btns'>
-        {/* Button #1 */}
-        <ContactButton
-          className='btn'
-          buttonStyle='btn--outline'
-          buttonSize='btn--large'
-        >
-          Call Hotline
-          <i className='fas fa-phone' />
-        </ContactButton>
+        <div className='contact'>
+          {/* Button #1 */}
+          <ContactButton
+            className='contact-btn'
+            buttonStyle='btn--outline'
+            buttonSize='btn--large'
+          >
+            CALL HOTLINE
+            <i className='fas fa-phone' />
+          </ContactButton>
+        </div>
 
         {/* Button #2 */}
         <SignInButton

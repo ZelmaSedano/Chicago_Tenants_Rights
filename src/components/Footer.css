@@ -110,4 +110,8 @@ a i {
     display: block;
     padding-left: 30%;
   }
+
+  .bottom {
+    width: 80%;
+  }
 }

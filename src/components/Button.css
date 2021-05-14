@@ -24,7 +24,7 @@
 .btn--red {
   background-color: #dd2b27;
   color: #fff;
-  border: 1px solid #dd2b27;
+  border: 2px solid #dd2b27;
   transition: all 0.3s ease-out;
   font-weight: 300;
   width: 100%;
