@@ -3,8 +3,9 @@
 /* PARENT1: <nav> that holds entire navbar menu */
 .navbar {
   /* display: flex - this will float everything on the same line, including navbar-top*/
-  background: url('./images/img-11.jpg') center center/cover no-repeat;
-  height: 120px;
+  /* background: url('./images/img-11.jpg') center center/cover no-repeat; */
+  background: #76a2af;
+  height: 130px;
   top: 0;
   justify-content: center;
   align-items: center;

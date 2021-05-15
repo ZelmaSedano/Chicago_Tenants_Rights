@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #3d6c7b;
+  background-color: #76a2af;
   padding: 2rem 0 1rem 0;
   width: 100%;
 }
@@ -49,12 +49,12 @@ ul li.list-item {
 
 .list-item,
 .list-item p {
-  font-weight: 100;
+  font-weight: 300;
 }
 
 .list-item:hover,
 .list-item p:hover {
-  font-weight: 300;
+  font-weight: 400;
 }
 
 /* Link tags */
@@ -108,7 +108,7 @@ a i {
 @media screen and (max-width: 620px) {
   .footer-links {
     display: block;
-    padding-left: 30%;
+    padding-left: 26%;
   }
 
   .bottom {
