@@ -1,23 +1,50 @@
 /* Main <div> at top */
 .cards {
   /* 16px is 1rem, so 64px on each side */
-  padding: 4rem;
+  padding: 4rem 4rem 1rem 4rem;
   background: #fff;
+  width: 100%;
 }
 
 /* Text: Check out these EPIC Destinations! */
-h1 {
+.header-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.header-text h1 {
+  display: flex;
+  /* makes the lines less wide */
+  width: 72%;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  margin-top: -30px;
   color: #303030;
   font-weight: 300;
-  letter-spacing: 3.5px;
+  letter-spacing: 1px;
+  margin-top: -10px;
+}
+
+.header-text h1::before,
+h1::after {
+  content: '';
+  border-top: 1px solid #6b7e85;
+  margin: 0 20px 0 0;
+  flex: 1 0 20px;
+}
+
+h1:after {
+  margin: 0 0 0 20px;
 }
 
 h1 span {
   font-weight: 700;
   font-size: 2.1rem;
   color: #76a1ae;
+  margin-left: 6.5px;
 }
 
 p {
@@ -42,6 +69,7 @@ p span {
   /* so they don't end up too wide */
   max-width: 1120px;
   width: 90%;
+  margin-top: 20px;
 }
 
 /* PARENT: surrounds all cards */
@@ -192,7 +220,6 @@ p span {
 }
 
 .lists {
-  margin-bottom: 24px;
   display: flex;
 }
 
@@ -201,11 +228,11 @@ p span {
   margin-right: -50px;
 }
 
-/* spacing between items */
-li {
-}
-
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 1200px) {
+  /* width of h1 & lines */
+  .cards .header-text h1 {
+    width: 85%;
+  }
 }
 
 /* Cards.js - <ul> that surrounds each Card row */
@@ -222,6 +249,9 @@ li {
   .cards__item {
     margin-bottom: 2rem;
   }
+  .cards .header-text h1 {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -231,5 +261,31 @@ li {
 
   .right-list {
     margin-left: 0px;
+  }
+
+  .cards .header-text h1::before,
+  h1::after {
+    border-top: none;
+  }
+
+  .cards__item__text {
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 400;
+  }
+
+  .cards__item__pic-wrap {
+    /* pushes image down quite a bit */
+    padding-top: 67%;
+    overflow: hidden;
+  }
+
+  .cards__item__pic-wrap::after {
+    /* internal sizing */
+    padding: 6px 8px;
+
+    font-size: 10px;
+    /* bolds text */
+    font-weight: 400;
   }
 }

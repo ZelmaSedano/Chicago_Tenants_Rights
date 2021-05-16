@@ -36,7 +36,7 @@
 
 /* Header Text at top of each list */
 .footer-link-items h2 {
-  color: #fff;
+  color: #d1dde0;
 }
 
 /* <li> */
@@ -58,8 +58,8 @@ ul li.list-item {
 }
 
 /* Link tags */
-.footer-link-items a {
-  color: #fff;
+li a {
+  color: #d1dde0;
   font-size: 1rem;
   text-decoration: none;
   margin-bottom: 0.5rem;
@@ -92,10 +92,14 @@ a i {
   font-size: 1rem;
   margin-top: 15px;
   font-weight: 100;
+  margin-bottom: 2px;
 }
 
-.bottom p.span {
-  font-weight: 300;
+.bottom p span {
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-left: 2px;
+  color: #d1dde0;
 }
 
 @media screen and (max-width: 800px) {
@@ -112,6 +116,6 @@ a i {
   }
 
   .bottom {
-    width: 80%;
+    width: 70%;
   }
 }

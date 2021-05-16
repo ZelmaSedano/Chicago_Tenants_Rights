@@ -5,7 +5,7 @@
   /* display: flex - this will float everything on the same line, including navbar-top*/
   /* background: url('./images/img-11.jpg') center center/cover no-repeat; */
   background: #76a2af;
-  height: 130px;
+  height: 120px;
   top: 0;
   justify-content: center;
   align-items: center;
@@ -30,7 +30,7 @@
   align-items: center;
   height: 80px;
   margin-left: 40px;
-  max-width: 92.5%;
+  max-width: 95%;
 }
 
 /************ Top **************************************************************/
@@ -129,24 +129,8 @@
 .nav-yelp-icon:hover {
   color: #dd2b27;
 }
-/************ Bottom ***********************************************************/
-.logo-img {
-  margin-top: 10px;
-}
-.logo-text {
-  margin-top: 15px;
-  margin-left: 10px;
-}
 
-.logo-text:hover {
-  color: #dd2b27;
-}
-
-img {
-  margin-top: 7px;
-  border-radius: 50px;
-}
-
+/************ Bottom ********************************************/
 /* PARENT3 - applied to logo LINK <a> */
 .navbar-logo {
   display: flex;
@@ -162,6 +146,24 @@ img {
   cursor: pointer;
 }
 
+.logo-img {
+  margin-top: 10px;
+}
+
+img {
+  margin-top: 7px;
+  border-radius: 50px;
+}
+
+.logo-text {
+  margin-top: 15px;
+  margin-left: 10px;
+}
+
+.logo-text:hover {
+  color: #dd2b27;
+}
+
 /* span {
   color: #dd2b27;
   font-size: 3.1rem;
@@ -174,7 +176,8 @@ img {
   font-size: 1.8rem;
 } */
 
-/* PARENT3 - <div> that holds Hamburger Menu */
+/* Hamburger Menu ********************/
+/* hides hamburger in Desktop view */
 .menu-icon {
   display: none;
 }
@@ -195,7 +198,7 @@ img {
   margin-top: 18px;
   /* floats links to the end */
   justify-content: end;
-  margin-right: 0rem;
+  margin-right: 20px;
   list-style: none;
   text-align: center;
   /* 60% of the viewport width */
@@ -231,6 +234,10 @@ img {
   display: none;
 }
 
+.smooth-scroll {
+  cursor: pointer;
+}
+
 .nav-btn {
   margin-left: 10px;
   margin-top: 13px;
@@ -241,8 +248,25 @@ img {
     display: flex;
     height: 80px;
   }
+
+  /* hides top of navbar */
   .navbar-top {
     display: none;
+  }
+
+  /* PARENT3 - <ul> that holds <li>'s & LINKs */
+  .nav-menu {
+    margin-right: 0px;
+  }
+
+  /* PARENT2 - holds menu */
+  .navbar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    margin-left: 0px;
+    max-width: 100%;
   }
 }
 

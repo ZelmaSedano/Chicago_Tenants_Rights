@@ -12,13 +12,13 @@ import Call from './images/img-12.png';
 
 function Cards() {
   return (
-    <div className='cards' id='services'>
+    <div className='cards' id='section1'>
       {/* ^^ 'services' is id to jump to'*/}
 
       {/* Heading Text **************************/}
       <div className='header-text'>
         <h1>
-          OUR <span> PRACTICE AREAS </span>
+          OUR <span>SERVICES </span>
         </h1>
       </div>
       {/* End of Header **************************/}

@@ -1,5 +1,6 @@
 // technologies
 import React from 'react';
+import { Link } from 'react-scroll';
 // documents
 import { SignInButton } from './SignInButton';
 import { ContactButton } from './ContactButton';
@@ -9,8 +10,10 @@ import './Hero.css';
 function Hero() {
   return (
     <div className='hero-container'>
-      <h1>KNOW YOUR RIGHTS!</h1>
-      <p>What are you waiting for?</p>
+      <div className='hero-header-wrapper'>
+        <h1>KNOW YOUR RIGHTS!</h1>
+        <p>What are you waiting for?</p>
+      </div>
 
       {/* Buttons */}
       <div className='hero-btns'>
@@ -41,8 +44,18 @@ function Hero() {
         <h2>Save 25-35% when you BOOK ONLINE & Complete the Intake Form!</h2>
       </div> */}
 
+      {/* Link is from 'react-scroll', and using the following values make it so that when you click on arrow, it smooth scrolls down to the next section*/}
       <div className='arrow'>
-        <i class='fas fa-chevron-down'></i>
+        <Link
+          className='smooth-scroll'
+          to='section1'
+          spy={true}
+          smooth={true}
+          offset={70}
+          duration={500}
+        >
+          <i class='fas fa-chevron-down'></i>
+        </Link>
       </div>
     </div>
   );

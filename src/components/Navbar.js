@@ -1,6 +1,7 @@
 // Desktop/2) React/YouTube/Brian
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link as Link1 } from 'react-router-dom';
+import { Link as Link2 } from 'react-scroll';
 
 // documents
 import { SignInButton } from './SignInButton';
@@ -18,7 +19,7 @@ function Navbar() {
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
 
-  // BUTTON disappears in Mobile View *************************
+  // Contact Button disappears in Mobile View ********************
   const showButton = () => {
     if (window.innerWidth <= 1140) {
       setButton(false);
@@ -27,7 +28,7 @@ function Navbar() {
     }
   };
 
-  // button will only render once b/c of the empty parameters
+  // button will only render once b/c of the empty parameters - if we don't have this there the button will pop up in Mobile Menu when you refresh page
   useEffect(() => {
     showButton();
   }, []);
@@ -37,7 +38,7 @@ function Navbar() {
   return (
     <>
       <nav className='navbar'>
-        {/* Top ******************************************************************************/}
+        {/* Top ************************************************/}
         <div className='navbar-top'>
           <div className='navbar-top-left'>
             <div className='navbar-top-colorblock'>
@@ -107,17 +108,17 @@ function Navbar() {
           </div>
         </div>
 
-        {/* Bottom *******************************************************************/}
+        {/* Bottom *********************************************/}
         <div className='navbar-container'>
           {/* If you don't want top/bottom sections, just delete the top section and add display:flex property to .navbar - this will float everything on the same line */}
 
-          <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
+          <Link1 to='/' className='navbar-logo' onClick={closeMobileMenu}>
             <img className='logo-img' src={logo} alt='chicago'></img>
             <div className='logo-text'>
               {/* Chicago Tenants Rights */}C | T | R | L
             </div>
             {/* <i class='fab fa-typo3' /> */}
-          </Link>
+          </Link1>
 
           {/* Hamburger Menu */}
           <div className='menu-icon' onClick={handleClick}>
@@ -128,39 +129,49 @@ function Navbar() {
           {/* .active class is added in mobile */}
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
-              <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+              <Link1 to='/' className='nav-links' onClick={closeMobileMenu}>
                 Home
-              </Link>
+              </Link1>
             </li>
+
+            {/* Smooth Scroll Section */}
             <li className='nav-item'>
-              {/* section1 = jump */}
-              <Link
-                to='#services'
-                className='nav-links'
-                onClick={() => window.location.replace('/#services')}
+              <Link2
+                className='nav-links smooth-scroll'
+                to='section1'
+                activeClass='active'
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
               >
                 Services
-              </Link>
+              </Link2>
             </li>
-            <li className='nav-item'>
-              <Link
-                to='#about'
-                className='nav-links'
-                onClick={() => window.location.replace('/#about')}
+            <li className='nav-item '>
+              <Link2
+                className='nav-links smooth-scroll'
+                activeClass='active'
+                to='section2'
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
               >
                 About
-              </Link>
+              </Link2>
             </li>
+            {/* End Smooth Scroll Section */}
 
             {/* Mobile SignUp Btn - Only shows up on Mobile */}
             <li className='mobile-link'>
-              <Link
+              <Link1
                 to='/sign-up'
                 className='nav-links-mobile'
                 onClick={closeMobileMenu}
               >
                 CONTACT
-              </Link>
+              </Link1>
             </li>
           </ul>
           {/* END Nav Menu */}

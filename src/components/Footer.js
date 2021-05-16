@@ -4,6 +4,7 @@ import './Footer.css';
 function Footer() {
   return (
     <div className='footer-container'>
+      {/* top */}
       <div class='footer-links'>
         {/* wrapper #1 */}
         <div className='footer-link-wrapper'>
@@ -120,6 +121,8 @@ function Footer() {
           </div>
         </div>
       </div>
+
+      {/* bottom */}
       <section className='bottom'>
         <p>
           {' '}
