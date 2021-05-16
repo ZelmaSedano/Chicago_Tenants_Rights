@@ -92,23 +92,27 @@ function Cards() {
         <div className='lists'>
           <div className='list-wrapper'>
             <ul className='left-list'>
-              <li>Chicago Landlord and Tenant Services</li>
-
+              <li>Liability</li>
               <li>Family Law</li>
               <li>Civil Litigation</li>
-              <li>Class Action Suits and Defense</li>
-              <li>Consumer Advocacy and Protection</li>
+            </ul>
+
+            <ul className='middle-left-list'>
+              <li>Consumer Advocacy</li>
+              <li>Real Estate Closings</li>
+              <li>Consumer Advocacy</li>
+            </ul>
+
+            <ul className='middle-right-list'>
               <li>Criminal Defense</li>
+              <li>Recovering Deposits</li>
+              <li>Class Action Suits</li>
             </ul>
 
             <ul className='right-list'>
-              <li>Contracts</li>
-
-              <li>Recovering Security Deposits from Landlord</li>
-              <li>Divorce</li>
-              <li>DUI/DWI</li>
-              <li>Consumer Advocacy and Protection</li>
-              <li>Real Estate Title Closings</li>
+              <li className='right'>DUI/DWI</li>
+              <li className='right'>Contracts</li>
+              <li className='right'>Divorce</li>
             </ul>
           </div>
         </div>

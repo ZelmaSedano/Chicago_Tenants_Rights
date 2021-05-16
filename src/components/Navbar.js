@@ -130,7 +130,7 @@ function Navbar() {
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
               <Link1 to='/' className='nav-links' onClick={closeMobileMenu}>
-                Home
+                HOME
               </Link1>
             </li>
 
@@ -145,7 +145,7 @@ function Navbar() {
                 offset={-70}
                 duration={500}
               >
-                Services
+                SERVICES
               </Link2>
             </li>
             <li className='nav-item '>
@@ -158,7 +158,7 @@ function Navbar() {
                 offset={-70}
                 duration={500}
               >
-                About
+                ABOUT
               </Link2>
             </li>
             {/* End Smooth Scroll Section */}

@@ -1,7 +1,7 @@
 /* Main <div> at top */
 .cards {
   /* 16px is 1rem, so 64px on each side */
-  padding: 4rem 4rem 1rem 4rem;
+  padding: 2.5rem 4rem 1rem 4rem;
   background: #fff;
   width: 100%;
 }
@@ -31,7 +31,7 @@
 .header-text h1::before,
 h1::after {
   content: '';
-  border-top: 1px solid #6b7e85;
+  border-top: 1px solid #76a2af;
   margin: 0 20px 0 0;
   flex: 1 0 20px;
 }
@@ -69,7 +69,6 @@ p span {
   /* so they don't end up too wide */
   max-width: 1120px;
   width: 90%;
-  margin-top: 20px;
 }
 
 /* PARENT: surrounds all cards */
@@ -195,7 +194,6 @@ p span {
 /* List of Services ********************************/
 
 /* Services Text *******************************/
-/* Services Text *******************************/
 .services-text-container {
   display: flex;
   /* info will be up & down */
@@ -210,23 +208,44 @@ p span {
   color: #303030;
 }
 
+.lists {
+  /* makes all the lists float on same line */
+  display: flex;
+}
+
 /* change to lists__wrapper*/
 .list-wrapper {
+  display: flex;
   /* so we can use absolute on nested items */
   position: relative;
+  text-align: center;
   /* top, horizontal, bottom */
-  margin: 10px 0 40px;
-  display: flex;
+  margin: 10px 0 30px;
 }
 
-.lists {
-  display: flex;
-}
-
+/* <ul>'s */
+.left-list,
+.middle-left-list,
+.middle-right-list,
 .right-list {
+  list-style: none;
+  /* spacing around each list */
+  margin: 0.5rem;
+}
+
+/* <li> list items */
+.lists .list-wrapper li {
+  padding: 15px;
+  margin: 10px;
+  background-color: #76a2af;
+  color: #fcfaf7;
+  border-radius: 10px;
+}
+
+/* .right-list {
   margin-left: 50px;
   margin-right: -50px;
-}
+} */
 
 @media only screen and (max-width: 1200px) {
   /* width of h1 & lines */
@@ -254,7 +273,26 @@ p span {
   }
 }
 
+@media only screen and (max-width: 934px) {
+  .lists .list-wrapper li {
+    padding: 15px;
+    margin: 10px;
+    background-color: #76a2af;
+    border-radius: 10px;
+  }
+}
+
 @media only screen and (max-width: 800px) {
+  /* this makes the bottom list in mobile-view the same width & height as well as position */
+  .lists .list-wrapper .right-list {
+    padding: 0px 5px;
+    margin-left: 4px;
+    margin-right: 1px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  /* makes list into a column */
   .list-wrapper {
     display: block;
   }

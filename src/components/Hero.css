@@ -9,7 +9,7 @@
   align-items: center;
   margin: 0 auto;
   margin-top: -80px;
-  height: 82vh;
+  height: 92vh;
   width: 100%;
   object-fit: contain;
   /* spotlight effect with darker edges */
@@ -31,13 +31,14 @@
 
 .hero-container .hero-header-wrapper > h1 {
   margin-top: 15px;
-  color: #fff;
+  color: #f5f1e9;
   font-weight: 700;
   margin-left: 20px;
+  font-size: 100px;
 }
 
 .hero-header-wrapper > p {
-  color: #fff;
+  color: #f5f1e9;
 }
 
 /* BUTTONS Section */
@@ -59,8 +60,8 @@
   margin-right: 1px;
 }
 
-/* Text at bottom of Hero Section */
-/* .contact {
+/* Text at bottom of Hero Section - REMOVED */
+/* .contact-text {
   color: #fff;
   font-size: 1rem;
   margin-top: 180px;
@@ -68,18 +69,19 @@
   text-align: center;
 } 
 
-.contact h2 {
+.contact-text h2 {
   font-weight: 300;
 }
 */
 
 .arrow {
-  margin-top: 80px;
-  margin-bottom: -180px;
+  margin-top: 190px;
+  margin-bottom: -120px;
 }
 
 .arrow i {
   font-size: 3rem;
+  color: #b8a99e;
 }
 
 .fa-chevron-down {
@@ -87,23 +89,17 @@
   font-size: 3.8rem;
 }
 
-/* Tablet View */
-@media screen and (min-width: 1230px) {
-  .hero-container .hero-header-wrapper > h1 {
-    font-size: 100px;
-  }
-}
-
+/* Everything BELOW 1230px */
 @media screen and (max-width: 1230px) {
   .hero-container .hero-header-wrapper > h1 {
     /* font-size was 100px, margin-top was -100px */
     font-size: 90px;
-    margin-top: -100px;
+    margin-top: -80px;
   }
 
   .arrow {
-    margin-top: 80px;
-    margin-bottom: -180px;
+    margin-top: 200px;
+    margin-bottom: -210px;
   }
 
   .arrow i {
@@ -115,13 +111,13 @@
 @media screen and (max-width: 970px) {
   .hero-container .hero-header-wrapper > h1 {
     /* font-size was 100px, margin-top was -100px */
-    font-size: 80px;
-    margin-top: -70px;
+    font-size: 85px;
+    margin-top: -110px;
   }
 
   .arrow {
-    margin-top: 50px;
-    margin-bottom: -180px;
+    margin-top: 200px;
+    margin-bottom: -240px;
   }
 
   .contact {
@@ -133,40 +129,55 @@
     text-decoration: none;
   }
 
-  .hero-btns {
-    /* when in mobile view, buttons stack instead of float side-by-side  */
-    display: block;
-    margin-left: -10px;
-  }
-
   .contact {
     margin-left: 20px;
   }
 }
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 905px) {
   .hero-container .hero-header-wrapper > h1 {
     /* font-size was 100px, margin-top was -100px */
-    font-size: 70px;
+    font-size: 80px;
     margin-top: -70px;
   }
-}
 
-@media screen and (max-width: 755px) {
-  .hero-container .hero-header-wrapper > h1 {
-    font-size: 60px;
-    margin-top: -80px;
+  .arrow {
+    margin-top: 210px;
+    margin-bottom: -200px;
   }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 856px) {
   .hero-container .hero-header-wrapper > h1 {
-    font-size: 55px;
+    font-size: 75px;
     margin-top: -80px;
+  }
+
+  .arrow {
+    margin-top: 150px;
+    margin-bottom: -215px;
+  }
+
+  .hero-btns {
+    /* when in mobile view, buttons stack instead of float side-by-side  */
+    display: block;
+    margin-left: -10px;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 806px) {
+  .hero-container .hero-header-wrapper > h1 {
+    font-size: 65px;
+    margin-top: -80px;
+  }
+
+  .arrow {
+    margin-top: 170px;
+    margin-bottom: -215px;
+  }
+}
+
+@media screen and (max-width: 706px) {
   .hero-container .hero-header-wrapper > h1 {
     font-size: 50px;
     margin-top: -80px;
@@ -188,13 +199,7 @@
 
 @media screen and (max-width: 450px) {
   .hero-container .hero-header-wrapper > h1 {
-    font-size: 33px;
-    margin-left: 13px;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .hero-container .hero-header-wrapper > h1 {
     font-size: 31px;
+    margin-left: 13px;
   }
 }

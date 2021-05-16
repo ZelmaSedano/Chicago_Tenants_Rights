@@ -24,7 +24,7 @@
 h1::after {
   content: '';
   /* this effects the last 3 bars, idk why it effects the right one from Cards.css */
-  border-top: 1px solid #6b7e85;
+  border-top: 1px solid #76a2af;
   margin: 0 20px 0 0;
   flex: 1 0 20px;
 }
