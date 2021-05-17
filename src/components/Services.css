@@ -37,7 +37,7 @@
   width: 100%;
   /* DELETED - fucked up width max-width: 1120px; */
   color: black;
-  background-color: #fff;
+  background-color: #f1f1f1;
 }
 
 .services-wrapper {
@@ -50,7 +50,7 @@
 
 /* <div> that holds services header text */
 .services-header {
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .services-header h3 {
@@ -59,73 +59,15 @@
   font-weight: 400;
 }
 
-.services-header p {
-  margin-top: 10px;
+.services-header h1.services-h1 {
+  margin-top: 50px;
   color: black;
   font-weight: 100;
-  font-size: 1.2rem;
+  font-size: 2rem;
 }
-
-.list-container {
-  display: flex;
-  position: relative;
-  text-align: center;
-  margin: 10px 0 15px;
-  width: 80%;
-}
-
-.list-wrapper {
-  display: flex;
-  /* so we can use absolute on nested items */
-  position: relative;
-  text-align: center;
-  /* top, horizontal, bottom */
-  margin: 10px 0 15px;
-}
-
-/* W3Schools: Card Item */
-.list-item {
-  /* takes up 1 width of remaining space (100%) */
-  flex: 1;
-  /* top & bottom, left & right */
-  margin: 0 1rem;
-  border-radius: 20px;
-  align-items: center;
-  background: transparent;
-}
-
-/* without this, it's not possible to align everything in the middle b/c you can't have two margins */
-.list-item-wrapper {
-  display: flex;
-  /* info will be up & down */
-  flex-flow: column;
-  /* everything will be aligned to center */
-  align-items: center;
-  /* center inside external space */
-  margin: 0 auto;
-  /* so they don't end up too wide */
-  max-width: 1120px;
-  width: 40%;
-}
-
-.list-item a {
-  text-decoration: none;
-}
-
-/* Add shadows to create the "card" effect */
-/* .list-item {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-} */
-
-/* On mouse-over, add a deeper shadow */
-/* .list-item:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-} */
 
 /* Circle inside the card */
-#circle {
-  /* without this, the icon won't float down and center horizontally */
+/* #circle {
   margin-top: 20px;
   display: flex;
   width: 100px;
@@ -134,38 +76,76 @@
   border-radius: 50%;
   align-items: center;
   justify-content: center;
+} */
+
+/* List of Services *****************************/
+/* holds entire section */
+.services {
+  text-align: center;
+  width: 100%;
 }
 
-.list-item-wrapper i {
-  /* recenters icon; it uncenters when surrounding it w/ Link */
-  margin: 0 auto;
-  font-size: 2rem;
-  color: #fff;
+.cen {
+  margin: auto;
+  overflow: hidden;
+  padding: 20px;
+  width: 70%;
 }
 
-/* Adds padding INSIDE the card container */
-.list-item-text {
-  margin: 15px 0px;
-  color: black;
+/* Lists */
+.service {
+  display: inline-block;
+  /* splits the width into 3 */
+  width: calc(100% / 3);
+  margin: 0 -2px;
+  /* spacing around each list */
+  padding: 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.service:hover {
+  background: #ddd;
+  border-radius: 2px;
 }
 
-.list-item-text h4 {
-  font-size: 1.4rem;
-  margin: 5px 0px;
+.service i {
+  color: #3498db;
+  font-size: 34px;
+  margin-bottom: 30px;
 }
-
-.list-item-text p {
-  font-size: 1rem;
-  text-align: justify;
-  text-justify: inter-word;
+.service h2 {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: 0;
+}
+.service p {
+  color: gray;
+  font-size: 15px;
+  font-weight: 500;
 }
 
 .services-bottom-text {
-  margin-bottom: 50px;
+  margin: 50px 0;
 }
 
 @media screen and (max-width: 1025px) {
   .list-wrapper {
     display: block;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  /* changes width from 100%/3 */
+  .service {
+    /* takes up half of width */
+    width: 50%;
+  }
+}
+@media screen and (max-width: 800px) {
+  /* takes up whole width */
+  .service {
+    width: 100%;
   }
 }

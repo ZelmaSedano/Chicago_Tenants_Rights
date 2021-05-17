@@ -35,78 +35,52 @@ function Services() {
         <div className='services-wrapper'>
           <div className='services-header'>
             <h3>We offer free inital consultations</h3>
-            <p>Our services include but are not limited to:</p>
+
+            <h1 className='services-h1'>
+              Other services include, but are not limited to:
+            </h1>
             <br />
           </div>
 
-          {/* List of Services */}
-          <div className='list-container'>
-            <div className='list-wrapper'>
-              {/* Card #1 */}
-
-              {/* W3Schools: Card Item */}
-              <div className='list-item'>
-                {/* added b/c list-item has a margin, so can't use margin: 0 auto to center circle */}
-                <div className='list-item-wrapper'>
-                  <Link to='/sign-up'>
-                    <div id='circle'>
-                      <i class='fas fa-search'></i>
-                    </div>
-                  </Link>
-
-                  <div class='list-item-text'>
-                    <h4>Project</h4>
-                    <p>
-                      I also do one-off projects and have ongoing corporate
-                      retainer clients. Want to work together? Let's chat!
-                    </p>
-                  </div>
-                </div>
+          {/* List of Services *****************/}
+          <div className='services'>
+            {/* wrapper that holds 2 Lists */}
+            <div className='cen'>
+              {/* List 1 */}
+              <div className='service'>
+                <i className='fas fa-anchor'></i>
+                <h2>Family Law</h2>
               </div>
 
-              {/* Card #2 */}
-              <div className='list-item'>
-                {/* added b/c list-item has a margin, so can't use margin: 0 auto to center circle */}
-                <div className='list-item-wrapper'>
-                  <Link to='/sign-up'>
-                    <div id='circle'>
-                      <i class='fas fa-search'></i>
-                    </div>
-                  </Link>
-
-                  <div class='list-item-text'>
-                    <h4>Project</h4>
-                    <p>
-                      I also do one-off projects and have ongoing corporate
-                      retainer clients. Want to work together? Let's chat!
-                    </p>
-                  </div>
-                </div>
+              <div className='service'>
+                <i className='fab fa-android'></i>
+                <h2>Criminal Defense</h2>
               </div>
 
-              <div className='list-item'>
-                {/* added b/c list-item has a margin, so can't use margin: 0 auto to center circle */}
-                <div className='list-item-wrapper'>
-                  <Link to='/sign-up'>
-                    <div id='circle'>
-                      <i class='fas fa-search'></i>
-                    </div>
-                  </Link>
+              <div className='service'>
+                <i className='fab fa-angellist'></i>
+                <h2>Civil Litigation</h2>
+              </div>
 
-                  <div class='list-item-text'>
-                    <h4>Project</h4>
-                    <p>
-                      I also do one-off projects and have ongoing corporate
-                      retainer clients. Want to work together? Let's chat!
-                    </p>
-                  </div>
-                </div>
+              {/* List 2 */}
+              <div className='service'>
+                <i className='fas fa-apple-alt'></i>
+                <h2>Class Action</h2>
+              </div>
+
+              <div className='service'>
+                <i className='fas fa-archway'></i>
+                <h2>Real Estate Closings</h2>
+              </div>
+
+              <div className='service'>
+                <i className='far fa-angry'></i>
+                <h2>DUI/DWI</h2>
               </div>
             </div>
           </div>
           {/* END List of Services */}
 
-          {/* Services Section */}
           <div className='services-bottom-text'>
             <h2>
               Save 25-35% when you BOOK ONLINE & Complete the Intake Form!
