@@ -2,7 +2,6 @@
 .cards-section {
   /* this allows background-color of to span 100% across the viewport */
   width: 100%;
-  background-color: #729eab;
 }
 
 .cards {
@@ -199,130 +198,6 @@ p span {
   line-height: 24px;
   font-weight: 400;
 }
-
-/* List of Services *****************************/
-
-/* Services Text: 100% width*****************************/
-.services-container {
-  display: flex;
-  /* info will be up & down */
-  flex-flow: column;
-  /* everything will be aligned to center */
-  align-items: center;
-  /* center inside external space */
-  margin: 0 auto;
-  /* adds 20px of blue top & bottom */
-  padding: 40px 0 40px 0;
-  /* pulls the entire background across the screen */
-  width: 100%;
-  /* DELETED - fucked up width max-width: 1120px; */
-  color: #303030;
-}
-
-.services-wrapper {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  margin: 0 auto;
-  background-color: #fff;
-  width: 100%;
-}
-
-/* <div> that holds services header text */
-.services-header {
-  margin-top: 50px;
-}
-
-.services-header h3 {
-  font-size: 1.8rem;
-  text-align: center;
-  font-weight: 400;
-}
-
-.services-header p {
-  margin-top: 10px;
-  color: black;
-  font-weight: 100;
-  font-size: 1.2rem;
-}
-
-.list-container {
-  display: flex;
-  position: relative;
-  text-align: center;
-  margin: 10px 0 15px;
-}
-
-.list-container .list-wrapper {
-  display: flex;
-  position: relative;
-  text-align: center;
-  margin: 1rem;
-}
-
-.list-item {
-  display: flex;
-  /* takes up 1 width of remaining space (100%) */
-  flex: 1;
-  /* top & bottom, left & right */
-  margin: 0 1rem;
-  border-radius: 20px;
-}
-
-.icon {
-}
-
-.list-item-text p {
-  font-size: 1rem;
-}
-
-/* .lists {
-  /* makes all the lists float on same line *
-  display: flex;
-  margin-top: -10px;
-}
-
-/* change to lists__wrapper*
-.list-wrapper {
-  display: flex;
-  /* so we can use absolute on nested items *
-  position: relative;
-  text-align: center;
-  /* top, horizontal, bottom *
-  margin: 10px 0 15px;
-} */
-
-/* <ul>'s 
-.left-list,
-.middle-left-list,
-.middle-right-list {
-  list-style: none;
-  /* spacing around each list 
-  margin: 0.5rem;
-}
-
-/* <li> list items 
-.lists .list-wrapper li {
-  margin: 10px;
-  color: black;
-  border-radius: 2px;
-  border: 1px solid #fcfaf7;
-  font-weight: 300;
-}
-
-.services-bottom-text h2 {
-  text-align: center;
-  color: #dd2b27;
-  margin-bottom: 40px;
-  font-size: 1.3rem;
-  font-weight: 300;
-}
-*/
-
-/* .right-list {
-  margin-left: 50px;
-  margin-right: -50px;
-} */
 
 @media only screen and (max-width: 1200px) {
   /* width of h1 & lines */

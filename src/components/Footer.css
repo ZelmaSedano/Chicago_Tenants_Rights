@@ -111,7 +111,6 @@ a i {
 
 @media screen and (max-width: 620px) {
   .footer-links {
-    display: block;
     padding-left: 26%;
   }
 
