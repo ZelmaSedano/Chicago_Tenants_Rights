@@ -40,10 +40,6 @@ function Hero() {
         </SignInButton>
       </div>
 
-      {/* <div className='contact'>
-        <h2>Save 25-35% when you BOOK ONLINE & Complete the Intake Form!</h2>
-      </div> */}
-
       {/* Link is from 'react-scroll', and using the following values make it so that when you click on arrow, it smooth scrolls down to the next section*/}
       <div className='arrow'>
         <Link

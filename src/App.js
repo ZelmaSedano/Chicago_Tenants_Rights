@@ -16,11 +16,11 @@ import SignUp from './components/pages/SignUp';
 function App() {
   return (
     <>
+      {/* This is the React Router Routing */}
       <Router>
         <Navbar />
         <Switch>
           <Route path='/' exact component={Home} />
-
           <Route path='/sign-up' exact component={SignUp} />
         </Switch>
         <Footer />

@@ -92,7 +92,7 @@ p.bottom {
   color: #6b7e85;
 }
 
-p span {
+p.bottom span {
   font-weight: 400;
   color: #dd2b27;
 }

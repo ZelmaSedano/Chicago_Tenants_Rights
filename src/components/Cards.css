@@ -1,4 +1,10 @@
 /* Main <div> at top */
+.cards-section {
+  /* this allows background-color of to span 100% across the viewport */
+  width: 100%;
+  background-color: #729eab;
+}
+
 .cards {
   /* 16px is 1rem, so 64px on each side */
   padding: 2.5rem 4rem 1rem 4rem;
@@ -56,6 +62,7 @@ p {
 p span {
   font-weight: 400;
 }
+/* END of Header Text */
 
 /* PARENT: surrounds all cards & wrapper */
 .cards__container {
@@ -79,36 +86,38 @@ p span {
   margin: 30px 0 40px;
 }
 
-/* PARENT: <ul> that holds different cards */
+/* ITEMS: <ul> that holds .cards__item */
 .cards__items {
   margin-bottom: 24px;
 }
 
-/**** CardItem.js *************************************/
-/* The following tags/classes are from CardItem.js
-   These are individual Cards */
+/**** CardItem.js ****************************/
+/* The following tags/classes are from CardItem.js */
 
-/* PARENT: <li> that holds entire Card */
+/* 1 ITEM: <li> that holds entire Card */
 .cards__item {
   display: flex;
   /* takes up 1 width of remaining space (100%) */
   flex: 1;
   /* top & bottom, left & right */
   margin: 0 1rem;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 /* PARENT: <Link> tag that surrounds img & text */
+/* the 'sheet' behind the card image */
 .cards__item__link {
   display: flex;
   /* content goes up & down */
   flex-flow: column;
   width: 100%;
-  border-radius: 10px;
   overflow: hidden;
   text-decoration: none;
+  /* it rounds the edges of the 'sheet' under the card */
+  border-radius: 25px;
+
   /* shading below card */
-  box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
+  box-shadow: 0 6px 20px rgba(118, 162, 175, 0.2);
   -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
   filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
 }
@@ -191,10 +200,10 @@ p span {
   font-weight: 400;
 }
 
-/* List of Services ********************************/
+/* List of Services *****************************/
 
-/* Services Text *******************************/
-.services-text-container {
+/* Services Text: 100% width*****************************/
+.services-container {
   display: flex;
   /* info will be up & down */
   flex-flow: column;
@@ -202,45 +211,113 @@ p span {
   align-items: center;
   /* center inside external space */
   margin: 0 auto;
-  /* so they don't end up too wide */
-  max-width: 1120px;
-  width: 90%;
+  /* adds 20px of blue top & bottom */
+  padding: 40px 0 40px 0;
+  /* pulls the entire background across the screen */
+  width: 100%;
+  /* DELETED - fucked up width max-width: 1120px; */
   color: #303030;
 }
 
-.lists {
-  /* makes all the lists float on same line */
+.services-wrapper {
   display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin: 0 auto;
+  background-color: #fff;
+  width: 100%;
 }
 
-/* change to lists__wrapper*/
-.list-wrapper {
+/* <div> that holds services header text */
+.services-header {
+  margin-top: 50px;
+}
+
+.services-header h3 {
+  font-size: 1.8rem;
+  text-align: center;
+  font-weight: 400;
+}
+
+.services-header p {
+  margin-top: 10px;
+  color: black;
+  font-weight: 100;
+  font-size: 1.2rem;
+}
+
+.list-container {
   display: flex;
-  /* so we can use absolute on nested items */
   position: relative;
   text-align: center;
-  /* top, horizontal, bottom */
-  margin: 10px 0 30px;
+  margin: 10px 0 15px;
 }
 
-/* <ul>'s */
+.list-container .list-wrapper {
+  display: flex;
+  position: relative;
+  text-align: center;
+  margin: 1rem;
+}
+
+.list-item {
+  display: flex;
+  /* takes up 1 width of remaining space (100%) */
+  flex: 1;
+  /* top & bottom, left & right */
+  margin: 0 1rem;
+  border-radius: 20px;
+}
+
+.icon {
+}
+
+.list-item-text p {
+  font-size: 1rem;
+}
+
+/* .lists {
+  /* makes all the lists float on same line *
+  display: flex;
+  margin-top: -10px;
+}
+
+/* change to lists__wrapper*
+.list-wrapper {
+  display: flex;
+  /* so we can use absolute on nested items *
+  position: relative;
+  text-align: center;
+  /* top, horizontal, bottom *
+  margin: 10px 0 15px;
+} */
+
+/* <ul>'s 
 .left-list,
 .middle-left-list,
-.middle-right-list,
-.right-list {
+.middle-right-list {
   list-style: none;
-  /* spacing around each list */
+  /* spacing around each list 
   margin: 0.5rem;
 }
 
-/* <li> list items */
+/* <li> list items 
 .lists .list-wrapper li {
-  padding: 15px;
   margin: 10px;
-  background-color: #76a2af;
-  color: #fcfaf7;
-  border-radius: 10px;
+  color: black;
+  border-radius: 2px;
+  border: 1px solid #fcfaf7;
+  font-weight: 300;
 }
+
+.services-bottom-text h2 {
+  text-align: center;
+  color: #dd2b27;
+  margin-bottom: 40px;
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+*/
 
 /* .right-list {
   margin-left: 50px;
@@ -277,8 +354,6 @@ p span {
   .lists .list-wrapper li {
     padding: 15px;
     margin: 10px;
-    background-color: #76a2af;
-    border-radius: 10px;
   }
 }
 
