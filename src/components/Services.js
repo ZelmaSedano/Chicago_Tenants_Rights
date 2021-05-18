@@ -39,7 +39,7 @@ function Services() {
                     <i class='fas fa-gavel'></i>
                   </div>
                   <div class='text-wrapper'>
-                    <h2>Sunmetecha</h2>
+                    <h2>Liability</h2>
                   </div>
                   <div class='btn-div'></div>
                 </div>
@@ -52,7 +52,7 @@ function Services() {
                     <i class='fas fa-balance-scale'></i>
                   </div>
                   <div class='text-wrapper'>
-                    <h2>Sunmetecha</h2>
+                    <h2>Class Action</h2>
                   </div>
                   <div class='btn-div'></div>
                 </div>
@@ -65,7 +65,7 @@ function Services() {
                     <i class='fas fa-car-side'></i>
                   </div>
                   <div class='text-wrapper'>
-                    <h2>Sunmetecha</h2>
+                    <h2>Family Law</h2>
                   </div>
                   <div class='btn-div'></div>
                 </div>
@@ -78,7 +78,7 @@ function Services() {
                     <i class='fas fa-home'></i>
                   </div>
                   <div class='text-wrapper'>
-                    <h2>Sunmetecha</h2>
+                    <h2>DUI/DWI</h2>
                   </div>
                   <div class='btn-div'></div>
                 </div>
@@ -91,7 +91,7 @@ function Services() {
                     <i class='fas fa-archway'></i>
                   </div>
                   <div class='text-wrapper'>
-                    <h2>Sunmetecha</h2>
+                    <h2>Civil Litigation</h2>
                   </div>
                   <div class='btn-div'></div>
                 </div>
