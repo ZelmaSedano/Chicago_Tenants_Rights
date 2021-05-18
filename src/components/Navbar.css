@@ -5,7 +5,7 @@
   /* display: flex - this will float everything on the same line, including navbar-top*/
   /* background: url('./images/img-11.jpg') center center/cover no-repeat; */
   background: #76a2af;
-  height: 120px;
+  height: 115px;
   top: 0;
   justify-content: center;
   align-items: center;
@@ -38,7 +38,7 @@
 .navbar-top-colorblock {
   background: rgba(221, 43, 39, 0.5);
   /* sets the height for the entire top row*/
-  height: 40px;
+  height: 35px;
   color: #fff;
   /* pushes whole colorblock over */
   margin-left: 135px;
@@ -57,6 +57,7 @@
 .navbar-top-phone .fas {
   margin-right: 5px;
   color: #d5e0e3;
+  font-size: 1rem;
 }
 
 .navbar-top-phone {
@@ -67,7 +68,7 @@
 
 .navbar-top-phone h5 {
   font-weight: 300;
-  font-size: 1.05rem;
+  font-size: 1rem;
 }
 
 .phone {
@@ -77,6 +78,8 @@
 
 .navbar-top-location .fas {
   margin-right: 5px;
+  font-size: 1rem;
+  color: #d5e0e3;
 }
 
 .navbar-top-location {
@@ -108,24 +111,12 @@
   list-style: none;
 }
 
-.nav-insta-icon {
+.nav-insta-icon i,
+.nav-facebook-icon i,
+.nav-twitter-icon i,
+.nav-yelp-icon i {
   color: #d5e0e3;
-  font-size: 1.35rem;
-}
-
-.nav-facebook-icon {
-  color: #d5e0e3;
-  font-size: 1.35rem;
-}
-
-.nav-twitter-icon {
-  color: #d5e0e3;
-  font-size: 1.35rem;
-}
-
-.nav-yelp-icon {
-  color: #d5e0e3;
-  font-size: 1.35rem;
+  font-size: 1.25rem;
 }
 
 .nav-insta-icon:hover,

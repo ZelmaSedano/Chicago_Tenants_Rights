@@ -45,25 +45,20 @@
   flex-flow: column;
   align-items: center;
   margin: 0 auto;
+  max-width: 1000px;
   width: 100%;
 }
 
 /* <div> that holds services header text */
 .services-header {
-  margin-top: 20px;
-}
-
-.services-header h3 {
-  font-size: 1.8rem;
-  text-align: center;
-  font-weight: 400;
+  margin-top: 30px;
 }
 
 .services-header h1.services-h1 {
-  margin-top: 50px;
+  margin-top: 30px;
   color: black;
   font-weight: 100;
-  font-size: 2rem;
+  font-size: 2.3rem;
 }
 
 /* Circle inside the card */
@@ -79,73 +74,113 @@
 } */
 
 /* List of Services *****************************/
-/* holds entire section */
-.services {
-  text-align: center;
+
+.list-wrapper {
   width: 100%;
+  height: auto;
 }
 
-.cen {
-  margin: auto;
-  overflow: hidden;
-  padding: 20px;
-  width: 70%;
-}
-
-/* Lists */
-.service {
-  display: inline-block;
-  /* splits the width into 3 */
-  width: calc(100% / 3);
-  margin: 0 -2px;
-  /* spacing around each list */
-  padding: 20px;
-  box-sizing: border-box;
-  cursor: pointer;
-  transition: 0.4s;
-}
-.service:hover {
-  background: #ddd;
-  border-radius: 2px;
-}
-
-.service i {
-  color: #3498db;
-  font-size: 34px;
-  margin-bottom: 30px;
-}
-.service h2 {
-  font-size: 18px;
+.list-header-text {
+  color: black;
+  font-size: 25px;
+  margin-top: 40px;
+  font-weight: 600;
   text-transform: uppercase;
-  font-weight: 500;
-  margin: 0;
-}
-.service p {
-  color: gray;
-  font-size: 15px;
-  font-weight: 500;
+  text-align: center;
 }
 
-.services-bottom-text {
-  margin: 50px 0;
+.row {
+  width: 100%;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-items: center;
+  justify-content: center;
 }
 
-@media screen and (max-width: 1025px) {
-  .list-wrapper {
-    display: block;
+.card {
+  /* Centering Combo: centers card-wrapper, which holds icon & text */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*****************************/
+
+  width: 210px;
+  height: 170px;
+  margin: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+.card:hover {
+  background-color: #ddd;
+}
+
+.card-wrapper {
+  max-width: 70%;
+  padding: 15px;
+}
+
+i {
+  font-size: 1.75rem;
+  color: #5ea7bd;
+}
+
+.icon-wrapper {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* text in card */
+.text-wrapper {
+  text-align: center;
+}
+.text-wrapper h2 {
+  margin-top: 20px;
+  font-size: 20px;
+  color: grey;
+  font-weight: 300;
+}
+/* END text in card */
+
+/* Bottom text */
+h3.bottom-h3 {
+  font-size: 2rem;
+  font-weight: 300;
+  color: rgba(221, 43, 39, 0.8);
+  padding-bottom: 50px;
+}
+
+@media (max-width: 860px) {
+  .services-header h1.services-h1 {
+    font-size: 1.8rem;
+  }
+
+  h3.bottom-h3 {
+    font-size: 1.8rem;
   }
 }
 
-@media screen and (max-width: 1000px) {
-  /* changes width from 100%/3 */
-  .service {
-    /* takes up half of width */
-    width: 50%;
-  }
-}
-@media screen and (max-width: 800px) {
-  /* takes up whole width */
-  .service {
+@media (max-width: 768px) {
+  .row {
     width: 100%;
+  }
+}
+
+@media (max-width: 550px) {
+  .services-header h1.services-h1 {
+    font-size: 1.5rem;
+  }
+  h3.bottom-h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 468px) {
+  .profile-card {
+    width: 290px;
+    height: 250px;
   }
 }

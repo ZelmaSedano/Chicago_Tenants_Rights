@@ -23,7 +23,7 @@ export const SignInButton = ({
   const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
 
   return (
-    <Link to='/sign-up' className='btn-mobile'>
+    <Link to='/sign-up'>
       {/* ${checking} styles & sizes with function */}
       <button
         className={`btn ${checkButtonStyle} ${checkButtonSize}`}

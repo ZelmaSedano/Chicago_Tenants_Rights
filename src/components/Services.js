@@ -5,89 +5,109 @@ import { Link } from 'react-router-dom';
 
 function Services() {
   return (
-    <div>
-      {/* <div className='lists'>
-          <div className='list-wrapper'>
-            <ul className='left-list'>
-              <li>Chicago Landlord and Tenant Services</li>
+    <div className='services-container'>
+      <div className='services-wrapper'>
+        <div className='services-header'>
+          <h1 className='services-h1'>
+            Other services include, but are not limited to:
+          </h1>
+          <br />
+        </div>
 
-              <li>Family Law</li>
-              <li>Civil Litigation</li>
-              <li>Class Action Suits and Defense</li>
-              <li>Consumer Advocacy and Protection</li>
-              <li>Criminal Defense</li>
-            </ul>
-
-            <ul className='right-list'>
-              <li>Contracts</li>
-
-              <li>Recovering Security Deposits from Landlord</li>
-              <li>Divorce</li>
-              <li>DUI/DWI</li>
-              <li>Consumer Advocacy and Protection</li>
-              <li>Real Estate Title Closings</li>
-            </ul>
-          </div> */}
-
-      {/* SERVICES SECTION: 100% width ******************/}
-      {/* Services Header ********/}
-      <div className='services-container'>
-        <div className='services-wrapper'>
-          <div className='services-header'>
-            <h3>We offer free inital consultations</h3>
-
-            <h1 className='services-h1'>
-              Other services include, but are not limited to:
-            </h1>
-            <br />
-          </div>
-
-          {/* List of Services *****************/}
-          <div className='services'>
-            {/* wrapper that holds 2 Lists */}
-            <div className='cen'>
-              {/* List 1 */}
-              <div className='service'>
-                <i className='fas fa-anchor'></i>
-                <h2>Family Law</h2>
+        {/* List of Services *****************/}
+        <div class='list-container'>
+          <div class='list-wrapper'>
+            <div class='row'>
+              {/* Card 1 */}
+              <div class='card'>
+                <div class='card-wrapper'>
+                  {/* <!-- icon wrapper --> */}
+                  <div class='icon-wrapper'>
+                    <i class='fas fa-archway'></i>
+                  </div>
+                  {/* <!-- text-wrapper --> */}
+                  <div class='text-wrapper'>
+                    <h2>Criminal Defense</h2>
+                  </div>
+                </div>
               </div>
 
-              <div className='service'>
-                <i className='fab fa-android'></i>
-                <h2>Criminal Defense</h2>
+              {/* Card 2 */}
+              <div class='card'>
+                <div class='card-wrapper'>
+                  <div class='icon-wrapper'>
+                    <i class='fas fa-gavel'></i>
+                  </div>
+                  <div class='text-wrapper'>
+                    <h2>Sunmetecha</h2>
+                  </div>
+                  <div class='btn-div'></div>
+                </div>
               </div>
 
-              <div className='service'>
-                <i className='fab fa-angellist'></i>
-                <h2>Civil Litigation</h2>
+              {/* Card 3 */}
+              <div class='card'>
+                <div class='card-content'>
+                  <div class='icon-wrapper'>
+                    <i class='fas fa-balance-scale'></i>
+                  </div>
+                  <div class='text-wrapper'>
+                    <h2>Sunmetecha</h2>
+                  </div>
+                  <div class='btn-div'></div>
+                </div>
               </div>
 
-              {/* List 2 */}
-              <div className='service'>
-                <i className='fas fa-apple-alt'></i>
-                <h2>Class Action</h2>
+              {/* Card 4 */}
+              <div class='card'>
+                <div class='card-content'>
+                  <div class='icon-wrapper'>
+                    <i class='fas fa-car-side'></i>
+                  </div>
+                  <div class='text-wrapper'>
+                    <h2>Sunmetecha</h2>
+                  </div>
+                  <div class='btn-div'></div>
+                </div>
               </div>
 
-              <div className='service'>
-                <i className='fas fa-archway'></i>
-                <h2>Real Estate Closings</h2>
+              {/* Card 5 */}
+              <div class='card'>
+                <div class='card-content'>
+                  <div class='icon-wrapper'>
+                    <i class='fas fa-home'></i>
+                  </div>
+                  <div class='text-wrapper'>
+                    <h2>Sunmetecha</h2>
+                  </div>
+                  <div class='btn-div'></div>
+                </div>
               </div>
 
-              <div className='service'>
-                <i className='far fa-angry'></i>
-                <h2>DUI/DWI</h2>
+              {/* Card 6 */}
+              <div class='card'>
+                <div class='card-content'>
+                  <div class='icon-wrapper'>
+                    <i class='fas fa-archway'></i>
+                  </div>
+                  <div class='text-wrapper'>
+                    <h2>Sunmetecha</h2>
+                  </div>
+                  <div class='btn-div'></div>
+                </div>
               </div>
             </div>
           </div>
-          {/* END List of Services */}
-
-          <div className='services-bottom-text'>
-            <h2>
-              Save 25-35% when you BOOK ONLINE & Complete the Intake Form!
-            </h2>
-          </div>
-          {/* END Services Section */}
         </div>
+        {/* END List of Services */}
+
+        <div className='services-bottom-text'>
+          <h3 className='bottom-h3'>We offer free inital consultations!</h3>
+          {/* <h2>
+              Save 25-35% when you BOOK ONLINE & Complete the Intake Form!
+            </h2> */}
+        </div>
+        {/* END Services Section */}
       </div>
     </div>
   );

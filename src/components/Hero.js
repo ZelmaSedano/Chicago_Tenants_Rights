@@ -3,7 +3,6 @@ import React from 'react';
 import { Link } from 'react-scroll';
 // documents
 import { SignInButton } from './SignInButton';
-import { ContactButton } from './ContactButton';
 import '../App.css';
 import './Hero.css';
 
@@ -17,8 +16,20 @@ function Hero() {
 
       {/* Buttons */}
       <div className='hero-btns'>
-        <div className='contact'>
-          {/* Button #1 */}
+        {/* make sure this button has btn assigned to it */}
+        <a
+          href='tel:312-877-5233'
+          className='phone'
+          target='_blank'
+          rel='noreferrer'
+        >
+          <button className='btn contact-btn'>
+            <p>CALL HOTLINE</p>
+            <i className='fas fa-phone' />
+          </button>
+        </a>
+        {/* Button #1 */}
+        {/* <div className='contact'>
           <ContactButton
             className='contact-btn'
             buttonStyle='btn--outline'
@@ -27,7 +38,7 @@ function Hero() {
             CALL HOTLINE
             <i className='fas fa-phone' />
           </ContactButton>
-        </div>
+        </div> */}
 
         {/* Button #2 */}
         <SignInButton
