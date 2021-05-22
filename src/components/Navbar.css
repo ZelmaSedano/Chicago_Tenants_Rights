@@ -33,7 +33,7 @@
   max-width: 95%;
 }
 
-/************ Top **************************************************************/
+/************ Top *********************************************/
 /****** Left ************************/
 .navbar-top-colorblock {
   background: rgba(221, 43, 39, 0.5);
@@ -46,7 +46,7 @@
 
 .navbar-top-colorblock h5 {
   font-weight: 100;
-  font-size: 1.04rem;
+  font-size: 1.01rem;
   letter-spacing: 0.6px;
   /* pushes text down slightly */
   margin-top: 10px;
@@ -54,43 +54,41 @@
   justify-self: start;
 }
 
+/* phone section wrapper */
+.navbar-top-phone {
+  margin-left: 32px;
+  color: #d5e0e3;
+  margin-top: 12px;
+} /* icon */
 .navbar-top-phone .fas {
   margin-right: 5px;
+  margin-left: -5px;
   color: #d5e0e3;
-  font-size: 1rem;
-}
-
-.navbar-top-phone {
-  margin-left: 35px;
-  color: #d5e0e3;
-  margin-top: 9px;
-}
-
+  font-size: 0.93rem;
+} /* 312 */
 .navbar-top-phone h5 {
   font-weight: 300;
-  font-size: 1rem;
-}
-
+  font-size: 0.95rem;
+} /* <a> */
 .phone {
   text-decoration: none;
   color: #d5e0e3;
 }
 
-.navbar-top-location .fas {
-  margin-right: 5px;
-  font-size: 1rem;
-  color: #d5e0e3;
-}
-
+/* location section wrapper */
 .navbar-top-location {
-  margin-left: 35px;
+  margin-left: 32px;
   color: #d5e0e3;
-  margin-top: 9px;
-}
-
+  margin-top: 11px;
+} /* icon */
+.navbar-top-location .fas {
+  margin-right: 8px;
+  font-size: 0.9rem;
+  color: #d5e0e3;
+} /* 77 W. Washington */
 .navbar-top-location h5 {
   font-weight: 300;
-  font-size: 1.05rem;
+  font-size: 1.01rem;
 }
 
 .navbar-top-phone .fas:hover,
@@ -105,7 +103,7 @@
   font-weight: 300;
   grid-template-columns: repeat(4, auto);
   grid-gap: 8.5px;
-  margin-top: 5px;
+  margin-top: 7px;
   margin-right: -10px;
   /* floats links to the end */
   list-style: none;
@@ -116,18 +114,30 @@
 .nav-twitter-icon i,
 .nav-yelp-icon i {
   color: #d5e0e3;
-  font-size: 1.25rem;
+  font-size: 1.15rem;
+  margin: 3px;
 }
 
-.nav-insta-icon:hover,
-.nav-facebook-icon:hover,
-.nav-twitter-icon:hover,
-.nav-yelp-icon:hover {
+.nav-insta-icon i:hover,
+.nav-facebook-icon i:hover,
+.nav-twitter-icon i:hover,
+.nav-yelp-icon i:hover {
   color: rgba(221, 43, 39, 0.5);
   transition: all 0.2s ease-out;
 }
 
-/************ Bottom ********************************************/
+/************ Bottom *****************************************/
+
+/* PARENT2 - holds bottom menu */
+.navbar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  margin-left: 40px;
+  max-width: 95%;
+}
+
 /* PARENT3 - applied to logo LINK <a> */
 .navbar-logo {
   display: flex;

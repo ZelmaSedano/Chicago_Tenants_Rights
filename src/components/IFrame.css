@@ -1,0 +1,43 @@
+.signup-page-container {
+  background: url('./images/img-4.jpg') center center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  /* centers text & content inside .container */
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: -80px;
+  height: 2450px;
+  width: 100%;
+  object-fit: contain;
+  /* spotlight effect with darker edges */
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+}
+
+/* IMPORTANT NOTE: if you don't have text above iframe, when you push the image up the links in navbar won't work */
+.iframe-header-text h1 {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.iframe-container {
+  width: 90%;
+  position: relative;
+  overflow: hidden;
+}
+
+.iframe-wrapper {
+  margin-top: 0px;
+}
+
+/* .iframe {
+  width: 100%;
+  align-items: center;
+  margin-left: 20px;
+} */
+
+/* .iframe {
+  width: 100%;
+  align-items: center;
+  margin-left: 20px;
+} */

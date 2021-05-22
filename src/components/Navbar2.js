@@ -9,7 +9,7 @@ import './Navbar.css';
 import logo from './images/logo1.jpeg';
 
 // COMPONENT
-function Navbar() {
+function Navbar2() {
   // States to alter:
   // used in handleclick(Hamburger/X) & closeMobileMenu(LINKS)
   const [click, setClick] = useState(false);
@@ -58,7 +58,6 @@ function Navbar() {
                 </a>
               </h5>
             </div>
-            {/* 77 W. Washington */}
             <div className='navbar-top-location'>
               <h5>
                 <a
@@ -130,37 +129,29 @@ function Navbar() {
           {/* .active class is added in mobile */}
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
-              <Link1 to='/' className='nav-links' onClick={closeMobileMenu}>
+              <a href='/' className='nav-links' onClick={closeMobileMenu}>
                 HOME
-              </Link1>
+              </a>
             </li>
 
             {/* Smooth Scroll Section */}
             <li className='nav-item'>
-              <Link2
-                className='nav-links smooth-scroll'
-                to='section1'
-                activeClass='active'
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
+              <a
+                href='/#services'
+                className='nav-links'
+                onClick={closeMobileMenu}
               >
                 SERVICES
-              </Link2>
+              </a>
             </li>
-            <li className='nav-item '>
-              <Link2
-                className='nav-links smooth-scroll'
-                activeClass='active'
-                to='section2'
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
+            <li className='nav-item'>
+              <a
+                href='/#services'
+                className='nav-links'
+                onClick={closeMobileMenu}
               >
                 ABOUT
-              </Link2>
+              </a>
             </li>
             {/* End Smooth Scroll Section */}
 
@@ -190,4 +181,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default Navbar2;

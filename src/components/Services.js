@@ -19,83 +19,125 @@ function Services() {
           <div class='list-wrapper'>
             <div class='row'>
               {/* Card 1 */}
-              <div class='card'>
-                <div class='card-wrapper'>
-                  {/* <!-- icon wrapper --> */}
-                  <div class='icon-wrapper'>
-                    <i class='fas fa-archway'></i>
-                  </div>
-                  {/* <!-- text-wrapper --> */}
-                  <div class='text-wrapper'>
-                    <h2>Criminal Defense</h2>
+              <Link to='/sign-up' className='services-links'>
+                <div class='card'>
+                  <div class='card-wrapper'>
+                    {/* <!-- icon wrapper --> */}
+                    <div class='icon-wrapper'>
+                      <i class='fas fa-archway'></i>
+                    </div>
+                    {/* <!-- text-wrapper --> */}
+                    <div class='text-wrapper'>
+                      <h2>Criminal Defense</h2>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </Link>
 
               {/* Card 2 */}
-              <div class='card'>
-                <div class='card-wrapper'>
-                  <div class='icon-wrapper'>
-                    <i class='fas fa-gavel'></i>
+              <Link to='/sign-up' className='services-links'>
+                <div class='card'>
+                  <div class='card-wrapper'>
+                    <div class='icon-wrapper'>
+                      <i class='fas fa-gavel'></i>
+                    </div>
+                    <div class='text-wrapper'>
+                      <h2>Liability</h2>
+                    </div>
+                    <div class='btn-div'></div>
                   </div>
-                  <div class='text-wrapper'>
-                    <h2>Liability</h2>
-                  </div>
-                  <div class='btn-div'></div>
                 </div>
-              </div>
+              </Link>
 
               {/* Card 3 */}
-              <div class='card'>
-                <div class='card-content'>
-                  <div class='icon-wrapper'>
-                    <i class='fas fa-balance-scale'></i>
+              <Link to='/sign-up' className='services-links'>
+                <div class='card'>
+                  <div class='card-content'>
+                    <div class='icon-wrapper'>
+                      <i class='fas fa-balance-scale'></i>
+                    </div>
+                    <div class='text-wrapper'>
+                      <h2>Class Action</h2>
+                    </div>
+                    <div class='btn-div'></div>
                   </div>
-                  <div class='text-wrapper'>
-                    <h2>Class Action</h2>
-                  </div>
-                  <div class='btn-div'></div>
                 </div>
-              </div>
+              </Link>
 
               {/* Card 4 */}
-              <div class='card'>
-                <div class='card-content'>
-                  <div class='icon-wrapper'>
-                    <i class='fas fa-car-side'></i>
+              <Link to='/sign-up' className='services-links'>
+                <div class='card'>
+                  <div class='card-content'>
+                    <div class='icon-wrapper'>
+                      <i class='fas fa-car-side'></i>
+                    </div>
+                    <div class='text-wrapper'>
+                      <h2>Family Law</h2>
+                    </div>
+                    <div class='btn-div'></div>
                   </div>
-                  <div class='text-wrapper'>
-                    <h2>Family Law</h2>
-                  </div>
-                  <div class='btn-div'></div>
                 </div>
-              </div>
+              </Link>
 
               {/* Card 5 */}
-              <div class='card'>
-                <div class='card-content'>
-                  <div class='icon-wrapper'>
-                    <i class='fas fa-home'></i>
+              <Link to='/sign-up' className='services-links'>
+                <div class='card'>
+                  <div class='card-content'>
+                    <div class='icon-wrapper'>
+                      <i class='fas fa-home'></i>
+                    </div>
+                    <div class='text-wrapper'>
+                      <h2>DUI/DWI</h2>
+                    </div>
+                    <div class='btn-div'></div>
                   </div>
-                  <div class='text-wrapper'>
-                    <h2>DUI/DWI</h2>
-                  </div>
-                  <div class='btn-div'></div>
                 </div>
-              </div>
+              </Link>
 
               {/* Card 6 */}
-              <div class='card'>
-                <div class='card-content'>
-                  <div class='icon-wrapper'>
-                    <i class='fas fa-archway'></i>
+              <Link to='/sign-up' className='services-links'>
+                <div class='card'>
+                  <div class='card-content'>
+                    <div class='icon-wrapper'>
+                      <i class='fas fa-archway'></i>
+                    </div>
+                    <div class='text-wrapper'>
+                      <h2>Civil Litigation</h2>
+                    </div>
+                    <div class='btn-div'></div>
                   </div>
-                  <div class='text-wrapper'>
-                    <h2>Civil Litigation</h2>
-                  </div>
-                  <div class='btn-div'></div>
                 </div>
-              </div>
+              </Link>
+
+              {/* Card 7 */}
+              <Link to='/sign-up' className='services-links'>
+                <div class='card'>
+                  <div class='card-content'>
+                    <div class='icon-wrapper'>
+                      <i class='fas fa-archway'></i>
+                    </div>
+                    <div class='text-wrapper'>
+                      <h2>Civil Litigation</h2>
+                    </div>
+                    <div class='btn-div'></div>
+                  </div>
+                </div>
+              </Link>
+
+              {/* Card 8 */}
+              <Link to='/sign-up' className='services-links'>
+                <div class='card'>
+                  <div class='card-content'>
+                    <div class='icon-wrapper'>
+                      <i class='fas fa-archway'></i>
+                    </div>
+                    <div class='text-wrapper'>
+                      <h2>Civil Litigation</h2>
+                    </div>
+                    <div class='btn-div'></div>
+                  </div>
+                </div>
+              </Link>
             </div>
           </div>
         </div>

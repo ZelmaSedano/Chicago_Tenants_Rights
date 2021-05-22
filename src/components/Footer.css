@@ -70,9 +70,11 @@ li a {
   transition: 0.3s ease-out;
 }
 
-a i {
+i.footer-icon {
   margin-right: 10px;
   margin-top: 5px;
+  font-size: 1rem;
+  color: #fff;
 }
 .footer-link-items a p {
   font-size: 16px;

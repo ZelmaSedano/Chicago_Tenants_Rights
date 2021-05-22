@@ -18,7 +18,7 @@ function Footer() {
                   target='_blank'
                   rel='noreferrer'
                 >
-                  <i class='fas fa-phone'></i>
+                  <i class='fas fa-phone footer-icon'></i>
                   <p className='footer-contact-text'>312.877.5322</p>
                 </a>
               </li>
@@ -29,7 +29,7 @@ function Footer() {
                   target='_blank'
                   rel='noreferrer'
                 >
-                  <i class='far fa-envelope'></i>
+                  <i class='far fa-envelope footer-icon'></i>
                   <p className='footer-contact-text'>Email</p>
                 </a>
               </li>
@@ -40,7 +40,7 @@ function Footer() {
                   target='_blank'
                   rel='noreferrer'
                 >
-                  <i class='fas fa-map-marker-alt'></i>
+                  <i class='fas fa-map-marker-alt footer-icon'></i>
                   <p className='footer-contact-text'>Location</p>
                 </a>
               </li>
@@ -91,7 +91,7 @@ function Footer() {
                   target='_blank'
                   rel='noreferrer'
                 >
-                  <i class='fab fa-instagram'></i>
+                  <i class='fab fa-instagram footer-icon'></i>
                   <p className='footer-contact-text'>Instagram</p>
                 </a>
               </li>
@@ -102,7 +102,7 @@ function Footer() {
                   target='_blank'
                   rel='noreferrer'
                 >
-                  <i class='fab fa-facebook-f'></i>
+                  <i class='fab fa-facebook-f footer-icon'></i>
                   <p className='footer-contact-text'>Facebook</p>
                 </a>
               </li>
@@ -113,7 +113,7 @@ function Footer() {
                   target='_blank'
                   rel='noreferrer'
                 >
-                  <i class='fab fa-twitter'></i>
+                  <i class='fab fa-twitter footer-icon'></i>
                   <p className='footer-contact-text'>Twitter</p>
                 </a>
               </li>
