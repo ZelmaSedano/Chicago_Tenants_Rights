@@ -23,20 +23,10 @@
   display: flex;
 }
 
-/* PARENT2 - holds menu */
-.navbar-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 80px;
-  margin-left: 40px;
-  max-width: 95%;
-}
-
 /************ Top *********************************************/
 /****** Left ************************/
 .navbar-top-colorblock {
-  background: rgba(221, 43, 39, 0.5);
+  background: rgba(221, 43, 39, 0.9);
   /* sets the height for the entire top row*/
   height: 35px;
   color: #fff;
@@ -58,7 +48,7 @@
 .navbar-top-phone {
   margin-left: 32px;
   color: #d5e0e3;
-  margin-top: 12px;
+  margin-top: 13px;
 } /* icon */
 .navbar-top-phone .fas {
   margin-right: 5px;
@@ -77,9 +67,9 @@
 
 /* location section wrapper */
 .navbar-top-location {
-  margin-left: 32px;
+  margin-left: 28px;
   color: #d5e0e3;
-  margin-top: 11px;
+  margin-top: 12px;
 } /* icon */
 .navbar-top-location .fas {
   margin-right: 8px;
@@ -114,7 +104,7 @@
 .nav-twitter-icon i,
 .nav-yelp-icon i {
   color: #d5e0e3;
-  font-size: 1.15rem;
+  font-size: 1.18rem;
   margin: 3px;
 }
 
@@ -196,12 +186,12 @@ img {
 /* CHILD - <i> Hamburger Menu */
 .fa-bars {
   font-size: 1.9rem;
-  color: #70a7b8;
+  color: #dedede;
   margin-top: 7px;
 }
 
 .menu-icon .fa-times {
-  color: #70a7b8;
+  color: #dedede;
   margin-top: 5px;
   margin-right: 3px;
 }
@@ -234,8 +224,8 @@ img {
   align-items: center;
   text-decoration: none;
   padding: 0.5rem 0.3rem;
-  margin: 0.1rem 0.2rem;
-  font-size: 25px;
+  margin: 0.4rem 0.1rem;
+  font-size: 23px;
   font-weight: 300;
   height: 100%;
   color: #ebedec;
@@ -254,16 +244,13 @@ img {
   display: none;
 }
 
-.smooth-scroll {
-  cursor: pointer;
-}
-
 /* Contact button */
 .nav-btn {
-  margin-top: 13px;
-  margin-right: 10px;
-  /* pull About towards btn without decreasing About's margin-right*/
-  margin-left: -10px;
+  margin-top: 15px;
+}
+
+.smooth-scroll {
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1065px) {
@@ -275,11 +262,6 @@ img {
   /* hides top of navbar */
   .navbar-top {
     display: none;
-  }
-
-  /* PARENT3 - <ul> that holds <li>'s & LINKs */
-  .nav-menu {
-    margin-right: 0px;
   }
 
   /* PARENT2 - holds menu */
@@ -306,7 +288,7 @@ img {
     position: relative;
   }
 
-  img {
+  .logo-img {
     display: none;
   }
 
@@ -405,10 +387,10 @@ img {
     padding: 14px 20px;
     margin: 10px auto;
 
-    width: 60%;
+    width: 30%;
     border: 1px solid #fff;
     border-radius: 4px;
-    font-size: 1.5rem;
+    font-size: 1.35rem;
     text-decoration: none;
     background-color: transparent;
     color: #fff;
@@ -424,16 +406,12 @@ img {
   }
 }
 
-@media screen and (max-width: 700px) {
-  .nav-links-mobile {
-    width: 100px;
-    width: 70%;
-  }
-}
-
 @media screen and (max-width: 500px) {
   .navbar-logo {
     font-size: 1.6rem;
+  }
+  .nav-links-mobile {
+    width: 45%;
   }
 
   .navbar-container {
@@ -447,5 +425,8 @@ img {
   }
   .navbar-container {
     margin-left: 0px;
+  }
+  .nav-links {
+    font-size: 21.5px;
   }
 }

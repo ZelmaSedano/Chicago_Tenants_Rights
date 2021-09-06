@@ -1,17 +1,18 @@
-// CTRL
+// page
 import React from 'react';
+
 import '../../App.css';
 
 import Navbar from '../Navbar';
-import IFrame from '../IFrame';
+import Rlto from '../Rlto';
 
-function SignUp() {
+function RLTO() {
   return (
-    <div>
+    <>
       <Navbar />
-      <IFrame />
-    </div>
+      <Rlto />
+    </>
   );
 }
 
-export default SignUp;
+export default RLTO;

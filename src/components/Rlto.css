@@ -1,0 +1,73 @@
+.RLTO-container {
+  display: flex;
+  flex-direction: column;
+  /* centers text & content inside .container */
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: -80px;
+  height: auto;
+  width: 100%;
+
+  object-fit: contain;
+  /* if you don't keep this image in the same folder as Hero.css, it doesn't work :( */
+  background: url('./images/img-8.jpg') center center/cover no-repeat;
+  /* spotlight effect with darker edges */
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+}
+
+/* nexted inside container */
+.RLTO-wrapper {
+  display: flex;
+  flex-flow: column;
+  /* centers all text */
+  align-items: center;
+  /* sets margin to center? */
+  margin: 150px auto;
+  /* holds everything inside certain width */
+  max-width: 1120px;
+  width: 80%;
+  border-radius: 5px;
+
+  background-color: #fff;
+}
+
+/*** Header Text ***********/
+.RLTO-text-wrapper {
+  /* Centering Combo: centers card-wrapper, which holds icon & text */
+  align-items: center;
+  justify-content: center;
+  /*****************************/
+  margin: 40px 0;
+}
+
+h3.RLTO-header-text {
+  text-align: center;
+  font-size: 1.7rem;
+  color: rgba(221, 43, 39, 0.7);
+  margin-bottom: 20px;
+}
+
+.RLTO-main-wrapper {
+  /* Centering Combo: centers card-wrapper, which holds icon & text */
+  width: 77%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  /* centers text */
+  margin: 30px auto;
+}
+
+.RLTO-main-wrapper p {
+  text-align: left;
+  font-size: 1.14rem;
+  line-height: 33px;
+  margin: 10px 0;
+
+  color: #435257;
+}
+.RLTO-main-wrapper p span {
+  font-size: 1.16rem;
+  font-weight: 600;
+  color: #546267;
+}

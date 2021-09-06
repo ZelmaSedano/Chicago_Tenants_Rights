@@ -1,7 +1,9 @@
-// Desktop/2) React/YouTube/Brian
+// This NavBar is for SignUp & RLTO page - it links back to home page, since first Navbar linked to same page and when you clicked links they didn't work when used on any other page besides that page
+
+// react usestate state
+
 import React, { useState, useEffect } from 'react';
 import { Link as Link1 } from 'react-router-dom';
-import { Link as Link2 } from 'react-scroll';
 
 // documents
 import { SignInButton } from './SignInButton';
@@ -154,6 +156,13 @@ function Navbar2() {
               </a>
             </li>
             {/* End Smooth Scroll Section */}
+
+            {/* RLTO */}
+            <li className='nav-item'>
+              <Link1 to='/rlto' className='nav-links' onClick={closeMobileMenu}>
+                RLTO
+              </Link1>
+            </li>
 
             {/* Mobile SignUp Btn - Only shows up on Mobile */}
             <li className='mobile-link'>

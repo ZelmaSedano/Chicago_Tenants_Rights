@@ -49,16 +49,15 @@
   width: 100%;
 }
 
-/* <div> that holds services header text */
+/* "Other Services"  */
 .services-header {
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 .services-header h1.services-h1 {
-  margin-top: 30px;
   color: black;
   font-weight: 100;
-  font-size: 2.3rem;
+  font-size: 2.1rem;
 }
 
 /* Circle inside the card */
@@ -74,7 +73,6 @@
 } */
 
 /* List of Services *****************************/
-
 .list-wrapper {
   width: 100%;
   height: auto;
@@ -93,7 +91,6 @@
   width: 100%;
   margin: auto;
   margin-bottom: 20px;
-  margin-top: 20px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -110,7 +107,6 @@
 
   width: 210px;
   height: 170px;
-  margin: 10px;
   cursor: pointer;
   transition: 1s;
 }
@@ -119,7 +115,8 @@
 }
 
 .card-wrapper {
-  max-width: 70%;
+  /* allows 'criminal defense to stretch across entire parent div */
+  max-width: 100%;
   padding: 15px;
 }
 

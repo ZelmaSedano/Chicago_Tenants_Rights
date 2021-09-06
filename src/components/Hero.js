@@ -14,20 +14,22 @@ function Hero() {
         <p>What are you waiting for?</p>
       </div>
 
-      {/* Buttons */}
+      {/* Buttons wrapper */}
       <div className='hero-btns'>
         {/* make sure this button has btn assigned to it */}
-        <a
-          href='tel:312-877-5233'
-          className='phone'
-          target='_blank'
-          rel='noreferrer'
-        >
-          <button className='btn contact-btn'>
-            <p>CALL HOTLINE</p>
-            <i className='fas fa-phone' />
-          </button>
-        </a>
+        <div className='contact-wrapper'>
+          <a
+            href='tel:312-877-5233'
+            className='phone'
+            target='_blank'
+            rel='noreferrer'
+          >
+            <button className='btn contact-btn'>
+              <p>CALL US NOW</p>
+              <i className='fas fa-phone' />
+            </button>
+          </a>
+        </div>
         {/* Button #1 */}
         {/* <div className='contact'>
           <ContactButton

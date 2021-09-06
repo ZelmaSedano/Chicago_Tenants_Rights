@@ -8,19 +8,36 @@
   width: 100%;
 }
 
-/* links at bottom of footer */
-/* footer-links holds entire section */
+/* footer wrapper  */
 .footer-links {
+  /* Centering Combo: centers card-wrapper, which holds icon & text */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*****************************/
   display: flex;
   justify-content: center;
-  width: 100%;
   max-width: 1000px;
   width: 95%;
+
+  margin-left: 15px;
 }
 
 /* wraps each list */
 .footer-link-wrapper {
+  /* Centering Combo: centers card-wrapper, which holds icon & text */
   display: flex;
+  align-items: center;
+  justify-content: center;
+  /*****************************/
+}
+
+h2.middle-text {
+  margin-top: -2px;
+}
+
+ul.middle-row li.footer-list-item {
+  margin: 12px 2px;
 }
 
 /* wraps each list */
@@ -41,19 +58,19 @@
 
 /* <li> */
 /* if you don't inlcude className, it will push down the <li>'s in Navbar */
-ul li.list-item {
+ul li.footer-list-item {
   margin: 10px 0 0 0;
   padding: 10px 0 0 0;
   list-style: none;
 }
 
-.list-item,
-.list-item p {
+.footer-list-item,
+.footer-list-item p {
   font-weight: 300;
 }
 
-.list-item:hover,
-.list-item p:hover {
+.footer-list-item:hover,
+.footer-list-item p:hover {
   font-weight: 400;
 }
 
@@ -68,6 +85,13 @@ li a {
 .footer-link-items a:hover {
   color: #e9e9e9;
   transition: 0.3s ease-out;
+}
+
+li.footer-list-item i.fa-phone,
+li.footer-list-item i.fa-envelope,
+li.footer-list-item i.fa-map-marker-alt {
+  margin-right: 5px;
+  margin-left: 3px;
 }
 
 i.footer-icon {
@@ -85,13 +109,20 @@ i.footer-icon {
   display: flex;
 }
 
-.bottom {
-  width: 90%;
+.footer-bottom-text {
+  width: 100%;
+  /* Centering Combo: centers card-wrapper, which holds icon & text */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*****************************/
+
+  margin-left: -10px;
 }
 
-.bottom p {
+.footer-bottom-text p {
   color: #fff;
-  font-size: 1rem;
+  font-size: 1.02rem;
   margin-top: 15px;
   font-weight: 100;
   margin-bottom: 2px;
@@ -107,13 +138,13 @@ i.footer-icon {
 @media screen and (max-width: 800px) {
   .footer-links {
     display: block;
-    padding-left: 40%;
+    padding-left: 3%;
   }
 }
 
 @media screen and (max-width: 620px) {
   .footer-links {
-    padding-left: 26%;
+    padding-left: 7%;
   }
 
   .bottom {

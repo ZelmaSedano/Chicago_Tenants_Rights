@@ -38,13 +38,32 @@
 
 .hero-header-wrapper > p {
   color: #f5f1e9;
+  font-size: 2.3rem;
+  font-weight: 100;
 }
 
-/* BUTTONS Section */
+/* BUTTONS Wrapper */
 .hero-btns {
+  /* Centering Combo: centers card-wrapper, which holds icon & text */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*****************************/
   display: flex;
   /* pushes button section down */
   margin-top: 40px;
+  margin-left: -6px;
+}
+
+/* this centers the contact button */
+.contact-wrapper {
+  /* Centering Combo: centers card-wrapper, which holds icon & text */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*****************************/
+  margin-left: 10px;
+  margin-top: -0.5px;
 }
 
 /* individual buttons */
@@ -88,23 +107,11 @@
   color: #fff;
 }
 
-/* Text at bottom of Hero Section - REMOVED */
-/* .contact-text {
-  color: #fff;
-  font-size: 1rem;
-  margin-top: 180px;
-  margin-bottom: -400px;
-  text-align: center;
-} 
-
-.contact-text h2 {
-  font-weight: 300;
-}
-*/
-
+/* arrow wrapper */
 .arrow {
   margin-top: 150px;
   margin-bottom: -120px;
+  margin-left: -8px;
 }
 
 .arrow i {
@@ -122,12 +129,16 @@
   .hero-container .hero-header-wrapper > h1 {
     /* font-size was 100px, margin-top was -100px */
     font-size: 90px;
-    margin-top: -80px;
+    margin-top: -60px;
+  }
+
+  .hero-header-wrapper > p {
+    font-size: 2rem;
   }
 
   .arrow {
-    margin-top: 200px;
-    margin-bottom: -210px;
+    margin-top: 150px;
+    margin-bottom: -170px;
   }
 
   .arrow i {
@@ -143,22 +154,18 @@
     margin-top: -110px;
   }
 
-  .arrow {
-    margin-top: 200px;
-    margin-bottom: -240px;
+  .hero-header-wrapper > p {
+    font-size: 1.8rem;
   }
 
-  .contact {
-    font-size: 0.9rem;
+  .arrow {
+    margin-top: 150px;
+    margin-bottom: -210px;
   }
 
   .btn-mobile {
     display: block;
     text-decoration: none;
-  }
-
-  .contact {
-    margin-left: 20px;
   }
 }
 
@@ -170,20 +177,20 @@
   }
 
   .arrow {
-    margin-top: 210px;
-    margin-bottom: -200px;
+    margin-top: 180px;
+    margin-bottom: -170px;
   }
 }
 
 @media screen and (max-width: 856px) {
   .hero-container .hero-header-wrapper > h1 {
     font-size: 75px;
-    margin-top: -80px;
+    margin-top: -90px;
   }
 
   .arrow {
-    margin-top: 150px;
-    margin-bottom: -215px;
+    margin-top: 160px;
+    margin-bottom: -185px;
   }
 
   /* when in mobile view, buttons stack instead of float side-by-side  */
@@ -191,16 +198,20 @@
     display: block;
     margin-left: -10px;
   }
+
+  button.contact-btn {
+    margin-left: 20px;
+  }
 }
 
 @media screen and (max-width: 806px) {
   .hero-container .hero-header-wrapper > h1 {
     font-size: 65px;
-    margin-top: -80px;
+    margin-top: -110px;
   }
 
   .arrow {
-    margin-top: 170px;
+    margin-top: 150px;
     margin-bottom: -215px;
   }
 }
@@ -209,6 +220,10 @@
   .hero-container .hero-header-wrapper > h1 {
     font-size: 50px;
     margin-top: -80px;
+  }
+
+  .hero-header-wrapper > p {
+    font-size: 1.6rem;
   }
 }
 
@@ -223,11 +238,32 @@
   .hero-container .hero-header-wrapper > h1 {
     font-size: 40px;
   }
+
+  .hero-header-wrapper > p {
+    font-size: 1.4rem;
+  }
 }
 
 @media screen and (max-width: 450px) {
   .hero-container .hero-header-wrapper > h1 {
     font-size: 31px;
     margin-left: 13px;
+    margin-top: -90px;
+  }
+
+  .hero-header-wrapper > p {
+    font-size: 1.3rem;
+  }
+
+  .hero-btns {
+    margin-top: 30px;
+  }
+
+  .contact-btn p {
+    font-size: 0.9rem;
+  }
+
+  .arrow {
+    margin-top: 150px;
   }
 }

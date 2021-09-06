@@ -175,6 +175,7 @@ function Navbar() {
               </Link1>
             </li>
           </ul>
+
           {/* END Nav Menu */}
 
           <div className='nav-btn'>
