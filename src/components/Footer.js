@@ -127,7 +127,18 @@ function Footer() {
         <p>
           {' '}
           &copy; 2020 Chicago Tenants Rights Law. All rights reserved. Designed
-          by <span>Sand + Zinc</span>
+          by{' '}
+          <span>
+            <a
+              href='https://portfolio-zvs.herokuapp.com/'
+              alt='portfolio'
+              target='_blank'
+              rel='noreferrer'
+              className='zelma'
+            >
+              Zelma Valentia
+            </a>
+          </span>
         </p>
       </section>
     </div>
